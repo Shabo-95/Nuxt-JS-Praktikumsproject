@@ -1,18 +1,16 @@
 <template>
   <!-- First Accordion -->
   <div class="accordion">
-    <button ref="myRef" @click="calculateHeight()"> Click Me </button>
-    <!-- <p> {{ height }} </p> -->
     <div class="accordion__item" v-for="(item, id) in items" :key="id">
       <button
         class="accordion__header"
-        v-on:click="myfunc2(id)"
+        v-on:click="openCloseAccordion(id)"
         :class="[item.open ? 'active' : '']"
       >
         <strong>{{ item.header }}</strong
         ><font-awesome-icon :icon="['fas', 'angle-down']" />
       </button>
-      <div ref="aco" :style="[item.open ? {'max-height': `${item.height}px`} : {'max-height': '0'}]" class="accordion__body" :class="[item.open ? 'active' : '']" @click="myfunc">
+      <div :ref="'accordion__body_' + id" :style="[item.open ? {'max-height': `${item.height}px`} : {'max-height': '0'}]" class="accordion__body" :class="[item.open ? 'active' : '']">
         <p class="accordion__content" >{{ item.body }}</p>
       </div>
     </div>
@@ -74,29 +72,21 @@ export default {
     };
   },
   methods: {
-    myfunc() {
-      console.log("this.$refs",this.$refs)
-      for(var ref in this.$refs) {
-        console.log("ref",ref)
-      }
-    },
-    calculateHeight() {
-      this.$refs.aco.forEach(ref => { 
-        this.customHeight = ref.scrollHeight;
-        console.log("this.customHeight",this.customHeight)
-        return ref.scrollHeight
-      });
-      // this.height = this.$refs.aco[0].scrollHeight;
-      // console.log("this.height",this.height);
-    },
-    myfunc2(item_ID) {
-      // item_ID.item.open = !item_ID.item.open;
+    openCloseAccordion(item_ID) {
+      /* To Change open-Variable from false to true and contrariwise  */
       this.items[item_ID].open = !this.items[item_ID].open;
-      this.items[item_ID].height = "100px";
-      console.log("item_ID", this.items[item_ID].height);
-    }
-  },
 
+      /* To Dynamically Copy The Height it needs into the Element */
+      let accordionRef = 'accordion__body_' + item_ID;
+      this.items[item_ID].height = this.$refs[accordionRef][0].scrollHeight;
+
+      /* To Dynamically Change The Height When Resizing */
+      window.addEventListener("resize", () => {
+        let accordionRef = 'accordion__body_' + item_ID;
+        this.items[item_ID].height = this.$refs[accordionRef][0].scrollHeight;
+      });
+    }
+  }
 };
 </script>
 
