@@ -1,0 +1,8 @@
+.customContainer {
+  @include flexCenter;
+  margin-top: 5%;
+
+  &__content {
+    width: 70%;
+  }
+}
