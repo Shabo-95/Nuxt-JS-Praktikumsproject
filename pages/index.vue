@@ -4,8 +4,8 @@
     <HeaderText />
     <Accordion />
     <GridContent />
-    <Overlay />
-    <OverlayButton />
+    <!-- <Overlay />
+    <OverlayButton /> -->
   </div>
 </template>
 
