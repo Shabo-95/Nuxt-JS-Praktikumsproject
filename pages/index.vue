@@ -6,6 +6,7 @@
     <GridContent />
     <!-- <Overlay />
     <OverlayButton /> -->
+    <Products :products="products" />
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import Accordion from "@/components/Accordion.vue";
 import GridContent from "@/components/GridContent.vue";
 import Overlay from "@/components/Overlay.vue";
 import OverlayButton from "@/components/OverlayButton.vue";
+import Products from '~/components/Products.vue';
 
 export default {
   name: "Home",
@@ -27,6 +29,12 @@ export default {
     GridContent,
     Overlay,
     OverlayButton,
+    Products,
+  },
+  async asyncData({$axios}) {
+    const api_url = "https://fakestoreapi.com/products?limit=12"
+    const products = await $axios.$get(api_url)
+    return { products }
   },
 };
 </script>
