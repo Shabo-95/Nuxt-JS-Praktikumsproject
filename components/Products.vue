@@ -35,14 +35,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scope>
-.products {
-    &__images {
-        // width: 200px;
-        // height: 200px;
-    }
-}
-.flexible {
-    flex-grow: 1;
-}
-</style>
+<style lang="scss" scoped></style>
