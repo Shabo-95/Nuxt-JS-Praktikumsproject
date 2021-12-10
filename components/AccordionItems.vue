@@ -46,6 +46,8 @@ export default {
       this.height = this.$refs.accordionBodyRef.scrollHeight
       this.$emit('clicked', { el: this.$el, open: this.open })
 
+      // TODO: Create the EventListener Just Once
+
       //   console.log('Add Event Listener 😍')
       // To Dynamically Change The Height When Resizing
       window.addEventListener('resize', () => {
