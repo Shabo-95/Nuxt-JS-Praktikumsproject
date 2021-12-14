@@ -52,7 +52,7 @@ export default {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: { analyze: true },
+  build: {},
 
   styleResources: {
     // your settings here
