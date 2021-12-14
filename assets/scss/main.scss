@@ -1,6 +1,4 @@
-// Importing Bootstrap To Scss
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "./variables/variables";
-@import "./mixins/typo";
-@import "./webfonts/webfonts";
-@import "./modules/modules";
+@import './variables/variables';
+@import './mixins/typo';
+@import './webfonts/webfonts';
+@import './modules/modules';

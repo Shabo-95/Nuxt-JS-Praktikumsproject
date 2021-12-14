@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="container w-50 p-5 mt-4 bg-light border border-primary rounded">
+    <div
+      class="container w-50 p-5 mt-4 bg-light border border-primary border-rad"
+    >
       <div class="row d-flex align-items-center justify-content-center p-2">
         <h3>Suche deine lieblings Produkte aus 😋</h3>
       </div>
@@ -23,19 +25,17 @@
           :key="product.id"
         >
           <div class="card h-100" style="width: 18rem">
-            <img
-              class="card-img-top"
-              :src="product.image"
-              alt="no picture available"
-              height="240"
-              width="180"
+            <ImageComponent
+              :source="product.image"
+              :height="240"
+              :width="180"
             />
             <div class="card-body text-center">
               <h5 class="card-title text-center">{{ product.title }}</h5>
             </div>
             <div class="card-footer text-center">
               <p class="card-text">Price: {{ product.price }}$</p>
-              <a class="btn btn-primary">Warenkorb legen</a>
+              <button class="btn btn-primary">Warenkorb legen</button>
             </div>
           </div>
         </div>
@@ -45,9 +45,23 @@
 </template>
 
 <script>
+import ImageComponent from '~/components/ImageComponent.vue'
+
 export default {
   name: 'Products',
-  props: ['products'],
+
+  props: {
+    products: {
+      type: Array,
+      default: [],
+      required: true,
+    },
+  },
+
+  components: {
+    ImageComponent,
+  },
+
   data() {
     return {
       search: '',
@@ -63,4 +77,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.border-rad {
+  border-radius: 50px;
+}
+</style>
