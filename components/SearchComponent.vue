@@ -11,7 +11,8 @@
         type="search"
         placeholder="Search"
         aria-label="Search"
-        :value="search"
+        v-model="searchText"
+        @input="updateSearchText"
       />
     </div>
   </div>
@@ -21,8 +22,14 @@
 export default {
   data() {
     return {
-      search: '',
+      searchText: '',
     }
+  },
+  methods: {
+    updateSearchText() {
+      console.log('SearchComponent')
+      this.$emit('updateSearchText', this.searchText)
+    },
   },
 }
 </script>

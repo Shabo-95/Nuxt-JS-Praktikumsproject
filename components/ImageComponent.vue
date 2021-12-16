@@ -17,9 +17,18 @@ import ImageSpinner from './ImageSpinner'
 export default {
   name: 'ImageComponent',
   props: {
+    // sourceSmall: {
+    //   type: String,
+    //   default: '',
+    //   required: true,
+    // },
+    // sourceBig: {
+    //   type: String,
+    //   default: '',
+    //   required: true,
+    // },
     source: {
       type: String,
-      default: '',
       required: true,
     },
     width: {
@@ -32,6 +41,19 @@ export default {
   components: {
     ImageSpinner,
   },
+  // data() {
+  //   return {
+  //     source: '',
+  //   }
+  // },
+  // mounted() {
+  //   if (window.innerWidth > 600) {
+  //     this.source = this.sourceBig
+  //   } else {
+  //     this.source = this.sourceSmall
+  //   }
+  //   // mixin für resize listener
+  // },
 }
 </script>
 

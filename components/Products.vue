@@ -1,19 +1,14 @@
 <template>
-  <div>
-    <div class="container products">
-      <div class="row justify-content-around">
-        <div class=".col-6 .col-sm-4 mt-5">
-          <div class="card h-100" style="width: 18rem">
-            <ImageComponent :source="image" :height="240" :width="180" />
-            <div class="card-body text-center">
-              <h5 class="card-title text-center">{{ title }}</h5>
-            </div>
-            <div class="card-footer text-center">
-              <p class="card-text">Price: {{ price }}$</p>
-              <button class="btn btn-primary">Warenkorb legen</button>
-            </div>
-          </div>
-        </div>
+  <div class=".col-6 .col-sm-4 mt-5">
+    <div class="card h-100" style="width: 18rem">
+      <ImageComponent :source="image" :height="240" :width="180" />
+
+      <div class="card-body text-center">
+        <h5 class="card-title text-center">{{ title }}</h5>
+      </div>
+      <div class="card-footer text-center">
+        <p class="card-text">Price: {{ price }}$</p>
+        <button class="btn btn-primary">Warenkorb legen</button>
       </div>
     </div>
   </div>
@@ -43,10 +38,12 @@ export default {
       required: true,
     },
   },
-
   components: {
     ImageComponent,
   },
+  // mounted() {
+  //   console.log(image)
+  // },
 }
 </script>
 
