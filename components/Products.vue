@@ -48,7 +48,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.border-rad {
-  border-radius: 50px;
-}
+
 </style>
