@@ -4,8 +4,8 @@
     <div class="container products">
       <div class="row justify-content-around">
         <Products
-          v-for="(product, id) in filteredProducts"
-          :key="id"
+          v-for="product in filteredProducts"
+          :key="product.id"
           v-bind="product"
         />
       </div>
