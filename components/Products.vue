@@ -1,8 +1,9 @@
 <template>
   <div class=".col-6 .col-sm-4 mt-5">
     <div class="card h-100" style="width: 18rem">
-      <ImageComponent :source="image" :height="240" :width="180" />
-
+      <NuxtLink class="nav-link" :to="`Products/${id}`">
+        <ImageComponent :source="image" :height="240" :width="180" />
+      </NuxtLink>
       <div class="card-body text-center">
         <h5 class="card-title text-center">{{ title }}</h5>
       </div>
@@ -47,6 +48,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

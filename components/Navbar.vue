@@ -18,6 +18,9 @@
         <li class="nav-item active">
           <NuxtLink class="nav-link" to="/Products">Produkte</NuxtLink>
         </li>
+        <li class="nav-item active">
+          <NuxtLink class="nav-link" to="/About">About</NuxtLink>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
         </li>
