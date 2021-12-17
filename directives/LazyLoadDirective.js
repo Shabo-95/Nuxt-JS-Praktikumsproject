@@ -1,14 +1,17 @@
 export default {
   inserted: (el) => {
+    console.log('el', el)
     function loadImage() {
       const imageElement = Array.from(el.children).find(
         (el) => el.nodeName === 'IMG'
       )
+      console.log('imageElement', imageElement)
       if (imageElement) {
         imageElement.addEventListener('load', () => {
           setTimeout(() => el.classList.add('loaded'), 100)
         })
         imageElement.addEventListener('error', () => console.log('error'))
+        console.log('Change Image')
         imageElement.src = imageElement.dataset.url
       }
     }

@@ -1,9 +1,15 @@
 <template>
   <div class=".col-6 .col-sm-4 mt-5">
     <div class="card h-100" style="width: 18rem">
-      <ImageComponent :source="image" :height="240" :width="180" />
-
+      <ImageComponent
+        :source="image"
+        :height="240"
+        :width="180"
+        ref="myChild"
+      />
       <div class="card-body text-center">
+        <h5 class="card-title text-center">{{ image }}</h5>
+
         <h5 class="card-title text-center">{{ title }}</h5>
       </div>
       <div class="card-footer text-center">
@@ -40,6 +46,13 @@ export default {
   },
   components: {
     ImageComponent,
+  },
+  mounted() {
+    // console.log('this.$refs.myChild', this.$refs.myChild.$el)
+    const imageElement2 = Array.from(this.$refs.myChild.$el.children).find(
+      (el) => el.nodeName === 'IMG'
+    )
+    console.log('imageElement2', imageElement2)
   },
   // mounted() {
   //   console.log(image)

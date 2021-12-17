@@ -1,5 +1,5 @@
 <template>
-  <figure v-lazyload class="image__wrapper">
+  <figure v-lazyload ref="figure" class="image__wrapper">
     <ImageSpinner class="image__spinner" />
     <img
       class="card-img-top p-4 image__item"
