@@ -13,7 +13,7 @@ export default {
   },
   async asyncData({ $axios, params }) {
     // const api_url = 'https://fakestoreapi.com/products?limit=3'
-    console.log('params', params)
+    // console.log('params', params)
     const api_url = 'https://fakestoreapi.com/products'
     const products = await $axios.$get(api_url)
 
