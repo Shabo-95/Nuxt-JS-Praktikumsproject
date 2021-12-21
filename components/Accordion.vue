@@ -59,11 +59,15 @@ export default {
       ],
     }
   },
+
+  // Wichtig: $emit send variables and elements
   methods: {
     itemClicked(data) {
       console.log('This is Opened', data)
+      // console.log('data.el', data.el)
     },
   },
+
   // mounted: function () {
   //   console.log("ready !!!")
   //   window.addEventListener('resize', this.openCloseAccordion)

@@ -36,7 +36,6 @@ export default {
   computed: {
     filteredProducts() {
       return this.products.filter((product) => {
-        console.log('searchText', this.searchText)
         return product.title
           .toLowerCase()
           .includes(this.searchText.toLowerCase())
@@ -46,8 +45,6 @@ export default {
   methods: {
     updateText(updatedText) {
       this.searchText = updatedText
-      console.log('this.filteredProducts', this.filteredProducts)
-      console.log('updatedText', updatedText)
     },
   },
   // mounted() {
@@ -57,7 +54,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped> 
+<style lang="scss" scoped>
 .border-rad {
   border-radius: 50px;
-}</style>
+}
+</style>
