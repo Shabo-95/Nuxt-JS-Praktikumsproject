@@ -1,25 +1,26 @@
 <template>
-  <div class="container mt-5">
+  <div class="container mt-5 mb-5">
     <div class="row custom-border border-primary">
       <div
         class="col-md-5 p-3 d-flex justify-content-center align-items-center"
-        v-for="productDetail in productDetails"
-        :key="productDetail.id"
-        v-bind="productDetail"
       >
         <img
-          :src="image"
+          :src="productDetails.image"
           class="image__custom"
           alt="No Picture"
           height="300"
           width="300"
         />
       </div>
-      <div class="col-md-7 p-5 p-md-2 border-primary border-left">
-        <h1 class="p-4">{{ title }}</h1>
-        <h4 class="p-4">{{ description }}</h4>
-        <h4 class="p-4">Price: {{ price }} $</h4>
-        <button class="btn btn-primary rounded p-4">Warenkorb legen</button>
+      <div class="col-md-7 p-5 p-md-2 border-primary custom-border-left">
+        <h1 class="p-4">{{ productDetails.title }}</h1>
+        <h5 class="p-4">{{ productDetails.description }}</h5>
+        <h3 class="p-4">Price: {{ productDetails.price }} $</h3>
+        <div class="d-flex justify-content-center align-items-center m-3">
+          <button class="btn w-100 custom-border-radius btn-primary p-3">
+            Warenkorb legen
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -29,7 +30,7 @@
 export default {
   props: {
     productDetails: {
-      type: Array,
+      type: Object,
       required: true,
     },
   },
@@ -37,12 +38,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.custom-border {
-  border-style: solid;
-  border-color: #dee2e6;
-  border-width: 2px;
-  border-radius: 50px;
+@media (min-width: 576px) {
+  .custom-border {
+    border: 2px solid;
+    border-radius: 50px;
+  }
 }
+
+@media (min-width: 768px) {
+  .custom-border-left {
+    border-left: 2px solid;
+  }
+}
+
 .image {
   &__custom:hover {
     cursor: pointer;
@@ -52,5 +60,8 @@ export default {
   &__custom {
     transition: all 0.5s ease-in-out;
   }
+}
+.custom-border-radius {
+  border-radius: 50px;
 }
 </style>
