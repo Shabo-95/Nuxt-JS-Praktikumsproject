@@ -5,9 +5,10 @@
         class="col-md-5 p-3 d-flex justify-content-center align-items-center"
         v-for="productDetail in productDetails"
         :key="productDetail.id"
+        v-bind="productDetail"
       >
         <img
-          :src="productDetail.image"
+          :src="image"
           class="image__custom"
           alt="No Picture"
           height="300"
@@ -15,9 +16,9 @@
         />
       </div>
       <div class="col-md-7 p-5 p-md-2 border-primary border-left">
-        <h1 class="p-4">{{ productDetail.title }}</h1>
-        <h4 class="p-4">{{ productDetail.description }}</h4>
-        <h4 class="p-4">Price: {{ productDetail.price }} $</h4>
+        <h1 class="p-4">{{ title }}</h1>
+        <h4 class="p-4">{{ description }}</h4>
+        <h4 class="p-4">Price: {{ price }} $</h4>
         <button class="btn btn-primary rounded p-4">Warenkorb legen</button>
       </div>
     </div>
