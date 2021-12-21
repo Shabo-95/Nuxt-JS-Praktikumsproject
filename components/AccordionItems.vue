@@ -21,6 +21,7 @@ export default {
     return {
       open: false,
       height: 0,
+      resizeId: 0,
     }
   },
   props: {
@@ -45,15 +46,22 @@ export default {
       // To Dynamically Copy The Height it needs into the Element
       this.height = this.$refs.accordionBodyRef.scrollHeight
       this.$emit('clicked', { el: this.$el, open: this.open })
-
-      // TODO: Add the EventListener Just Once
-
-      console.log('Add Event Listener 😍')
-      // To Dynamically Change The Height When Resizing
-      window.addEventListener('resize', () => {
-        this.height = this.$refs.accordionBodyRef.scrollHeight
-      })
     },
+    // To Dynamically Change The Height When Resizing
+    onWindowResize() {
+      clearTimeout(this.resizeId)
+      this.resizeId = setTimeout(this.doneResizing, 500)
+    },
+    doneResizing() {
+      console.log('Resize Event Listener Is Called 😍')
+      this.height = this.$refs.accordionBodyRef.scrollHeight
+    },
+  },
+  mounted() {
+    window.addEventListener('resize', this.onWindowResize)
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.onWindowResize)
   },
 }
 </script>
