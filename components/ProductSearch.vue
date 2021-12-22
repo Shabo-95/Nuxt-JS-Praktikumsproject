@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="productSearch-div">
     <SearchComponent v-on:updateSearchText="updateText($event)" />
     <div class="container mb-5">
       <div class="row justify-content-around">
@@ -31,6 +31,7 @@ export default {
   data() {
     return {
       searchText: '',
+      showModal: true,
     }
   },
   computed: {
@@ -57,5 +58,8 @@ export default {
 <style lang="scss" scoped>
 .border-rad {
   border-radius: 50px;
+}
+.productSearch-div {
+  position: relative;
 }
 </style>

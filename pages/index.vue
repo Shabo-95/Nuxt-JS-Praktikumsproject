@@ -4,8 +4,6 @@
     <HeaderText />
     <Accordion />
     <GridContent />
-    <!-- <Overlay />
-    <OverlayButton /> -->
   </div>
 </template>
 
@@ -15,8 +13,6 @@ import HeaderImage from '@/components/HeaderImage.vue'
 import HeaderText from '@/components/HeaderText.vue'
 import Accordion from '@/components/Accordion.vue'
 import GridContent from '@/components/GridContent.vue'
-import Overlay from '@/components/Overlay.vue'
-import OverlayButton from '@/components/OverlayButton.vue'
 
 export default {
   name: 'Home',
@@ -25,8 +21,6 @@ export default {
     HeaderText,
     Accordion,
     GridContent,
-    Overlay,
-    OverlayButton,
   },
 }
 </script>

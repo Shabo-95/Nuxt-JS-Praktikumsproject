@@ -11,7 +11,9 @@
       </div>
       <div class="card-footer text-center">
         <p class="card-text">Price: {{ price }}$</p>
-        <button class="btn btn-primary">Warenkorb legen</button>
+        <button class="btn btn-primary" @click="$nuxt.$emit('open-modal')">
+          Warenkorb legen
+        </button>
       </div>
     </div>
   </div>
@@ -41,6 +43,7 @@ export default {
       required: true,
     },
   },
+
   components: {
     ImageComponent,
   },

@@ -1,14 +1,16 @@
 <template>
-  <ProductSearch :products="products" />
+  <div>
+    <ProductSearch :products="products" />
+  </div>
 </template>
 
 <script>
 import ProductSearch from '~/components/ProductSearch.vue'
-
 export default {
   components: {
     ProductSearch,
   },
+
   async asyncData({ $axios }) {
     // const api_url = 'https://fakestoreapi.com/products?limit=3'
     // console.log('params', params)
