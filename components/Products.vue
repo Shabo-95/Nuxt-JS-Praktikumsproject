@@ -1,5 +1,7 @@
 <template>
-  <div class=".col-6 .col-sm-4 mt-5">
+  <div
+    class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center mt-5"
+  >
     <div class="card h-100" style="width: 18rem">
       <NuxtLink class="nav-link" :to="`Products/${id}`">
         <ImageComponent :source="image" :height="240" :width="180" />

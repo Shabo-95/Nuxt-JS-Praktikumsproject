@@ -1,7 +1,7 @@
 <template>
   <div>
     <SearchComponent v-on:updateSearchText="updateText($event)" />
-    <div class="container products">
+    <div class="container">
       <div class="row justify-content-around">
         <Products
           v-for="product in filteredProducts"
@@ -47,10 +47,10 @@ export default {
       this.searchText = updatedText
     },
   },
-  // mounted() {
-  //   console.log('this.filteredProducts', this.filteredProducts)
-  //   console.log('products', this.products)
-  // },
+  mounted() {
+    // console.log('this.filteredProducts', this.filteredProducts)
+    console.log('products', this.products)
+  },
 }
 </script>
 
