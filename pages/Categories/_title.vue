@@ -9,12 +9,14 @@ export default {
   components: {
     ProductSearch,
   },
-  async asyncData({ $axios, params }) {
+  async asyncData({ $axios, route }) {
     // const api_url = 'https://fakestoreapi.com/products?limit=3'
     // console.log('params', params)
-    const api_url = 'https://fakestoreapi.com/products'
+    const api_url =
+      'https://fakestoreapi.com/products/category/' + route.params.title
     const products = await $axios.$get(api_url)
-
+    // console.log('route.params.title', route.params.title)
+    // console.log('api_url', api_url)
     return { products }
   },
 }
