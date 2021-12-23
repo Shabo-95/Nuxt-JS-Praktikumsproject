@@ -17,7 +17,10 @@
         <h5 class="p-4">{{ productDetails.description }}</h5>
         <h3 class="p-4">Price: {{ productDetails.price }} $</h3>
         <div class="d-flex justify-content-center align-items-center m-3">
-          <button class="btn w-100 custom-border-radius btn-primary p-3">
+          <button
+            class="btn w-100 custom-border-radius btn-primary p-3"
+            @click="$nuxt.$emit('open-modal')"
+          >
             Warenkorb legen
           </button>
         </div>

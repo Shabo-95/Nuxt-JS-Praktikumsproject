@@ -1,5 +1,5 @@
 <template>
-  <div class="modal-overlay">
+  <div class="modal-overlay" @click="$emit('close-modal')">
     <div class="custom-modal">
       <div class="close" @click="$emit('close-modal')">
         <img
