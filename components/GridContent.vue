@@ -3,48 +3,56 @@
     <div class="row justify-content-center">
       <div class="col-md-5 d-flex align-items-stretch">
         <div class="card border-0">
-          <img src="@/assets/images/grid-images/image1.jpeg" alt="image1" />
+          <img src="@/assets/images/grid-images/placeholder.png" alt="image1" />
           <div class="card-body">
-            <h4 class="card-title">
-              Immer 100 Prozent – Akkuentwicklung bei STIHL
-            </h4>
+            <h4 class="card-title">Lorem ipsum dolor sit amet consectetur.</h4>
             <p class="card-text">
-              Akkuentwicklung bei STIHL – spannende Aufgaben für Entwickler
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              tempore laboriosam omnis odit ea, molestias optio veniam, nemo
+              nobis voluptatem deleniti ipsam voluptates saepe labore! Aliquam
+              quam sit cupiditate ipsa.
             </p>
           </div>
         </div>
       </div>
       <div class="col-md-5 d-flex align-items-stretch">
         <div class="card border-0">
-          <img src="@/assets/images/grid-images/image2.jpeg" alt="image2" />
+          <img src="@/assets/images/grid-images/placeholder.png" alt="image2" />
           <div class="card-body">
-            <h4 class="card-title">STIHL digitalisiert sich</h4>
+            <h4 class="card-title">Lorem ipsum dolor sit amet consectetur.</h4>
             <p class="card-text">
-              STIHL auf Digitalisierungskurs – das Unternehmen investiert in
-              digitale Projekte und Maßnahmen, mit Augenmaß und klaren
-              Prioritäten.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              tempore laboriosam omnis odit ea, molestias optio veniam, nemo
+              nobis voluptatem deleniti ipsam voluptates saepe labore! Aliquam
+              quam sit cupiditate ipsa.
             </p>
           </div>
         </div>
       </div>
       <div class="col-md-5 teaser__item d-flex align-items-stretch">
         <div class="card border-0 mt-4">
-          <img src="@/assets/images/grid-images/image3.jpeg" alt="image3" />
+          <img src="@/assets/images/grid-images/placeholder.png" alt="image3" />
           <div class="card-body">
-            <h4 class="card-title">Es fährt – Robotik bei STIHL</h4>
-            <p class="card-text">Die intelligenten Gartengeräte der Zukunft</p>
+            <h4 class="card-title">Lorem ipsum dolor sit amet consectetur.</h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              tempore laboriosam omnis odit ea, molestias optio veniam, nemo
+              nobis voluptatem deleniti ipsam voluptates saepe labore! Aliquam
+              quam sit cupiditate ipsa.
+            </p>
           </div>
         </div>
       </div>
       <div class="col-md-5 d-flex align-items-stretch">
         <div class="card border-0 mt-4">
-          <img src="@/assets/images/grid-images/image4.jpeg" alt="image4" />
+          <img src="@/assets/images/grid-images/placeholder.png" alt="image4" />
           <div class="card-body">
-            <h4 class="card-title">ONE STIHL – ein System für alle Fälle</h4>
+            <h4 class="card-title">Lorem ipsum dolor sit amet consectetur.</h4>
             <p class="card-text">
-              Für eine einheitliche Prozess- und Systemlandschaft durchläuft
-              STIHL zugleich einen der größten Veränderungsprozesse in der
-              Geschichte des Unternehmens.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              tempore laboriosam omnis odit ea, molestias optio veniam, nemo
+              nobis voluptatem deleniti ipsam voluptates saepe labore! Aliquam
+              quam sit cupiditate ipsa.
             </p>
           </div>
         </div>
@@ -55,8 +63,8 @@
 
 <script>
 export default {
-  name: "GridContent",
-};
+  name: 'GridContent',
+}
 </script>
 
 <style lang="scss"></style>

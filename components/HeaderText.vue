@@ -2,19 +2,22 @@
   <div class="customContainer">
     <div class="customContainer__content">
       <h1 class="customContainer__h1">
-        Think big. Think bold. Be cutting edge.
+        Lorem ipsum dolor sit amet consectetur.
       </h1>
       <p>
-        Wenn es um Motorsägen und Motorgeräte geht, steht STIHL seit langem an
-        der Spitze des Weltmarktes. Doch längst verbirgt sich hinter dem
-        typischen orangefarbenen Logo viel mehr: Als Maschinenbauer bekannt
-        geworden, entwickelt sich STIHL heute mehr und mehr zu einem
-        internationalen, vielseitig aufgestellten Unternehmen, das sich neben
-        den klassischen Geschäftsfeldern auch mit Big Data, Algorithmen und
-        Cloud-Computing beschäftigt. Damit verbunden ist der Anspruch, auch
-        weiterhin der Technologieführer in der Branche zu sein. Und dazu braucht
-        es innovative und kluge Köpfe – kurzum: Visionäre, Tüftler und digitale
-        Pioniere. Sie sind beim STIHL CUTTING EDGE AWARD gefragt.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque
+        nobis totam eum aspernatur, magnam sunt dolorem harum unde facere enim
+        nisi modi error ducimus deleniti dolorum perferendis cum quas! Ea quod
+        distinctio modi neque incidunt laboriosam, similique perferendis
+        voluptas error enim, vitae dolorem maxime aut dignissimos laborum quos
+        architecto velit et nam esse officia voluptatibus. Hic consectetur ullam
+        fuga! Rerum, totam! Cum, inventore quidem asperiores vel voluptate
+        obcaecati ipsam consectetur, molestiae, debitis odit maiores ad! Ex
+        culpa consequatur eum? Ducimus ratione beatae esse. Ea minima
+        repellendus harum voluptate eligendi. Commodi et debitis voluptatum
+        rerum aliquid suscipit repellendus distinctio quibusdam dignissimos ea
+        dolores tempora minus odit ut illo rem explicabo velit, nostrum numquam
+        nihil perferendis.
       </p>
     </div>
   </div>
@@ -22,8 +25,8 @@
 
 <script>
 export default {
-  name: "HeaderText",
-};
+  name: 'HeaderText',
+}
 </script>
 
 <style lang="scss"></style>

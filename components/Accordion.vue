@@ -22,39 +22,37 @@ export default {
     return {
       items: [
         {
-          header: 'Begeistert an Zukunftsthemen tüfteln – Selina Stihl',
+          header: 'Lorem ipsum dolor sit amet consectetur.',
           body:
-            '<p>Als Mitglied der Familie Stihl bin ich im Beirat tätig, ' +
-            'der sich in erster Linie mit der Strategie beschäftigt. Beim STIHL Award war spannend, ' +
-            'in welcher Weise die Studierenden unsere strategischen Themenfelder mit verschiedenen ' +
-            'aktuellen Entwicklungen und auch ihren Wahrnehmungen und Herangehensweisen in Verbindung ' +
-            'gebracht haben. Zwischendurch die Blickrichtung zu ändern und neue Impulse aufzunehmen, ' +
-            'macht Spaß und ist aufschlussreich.</p>',
+            '<p>Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam, ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam, ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
         },
         {
-          header:
-            'Die eigene Innovationskraft erproben – Dr. Michael Prochaska',
+          header: 'Lorem ipsum dolor sit amet consectetur.',
           body:
-            '<p>Was Nachwuchskräfte angeht, achten wir bei STIHL auf drei Dinge: die fachliche ' +
-            'Qualifikation, die Extraaktivitäten neben Studium oder Ausbildung und die Chemie. ' +
-            'Letztere ist uns besonders wichtig. Der STIHL CUTTING EDGE AWARD erfüllt alle drei Wünsche ' +
-            'auf einmal: Die Teilnehmerinnen und Teilnehmer sind fachlich qualifiziert, engagiert und setzen ' +
-            'sich intensiv mit unserem Arbeitsumfeld auseinander, um neue, innovative Ansätze zu finden.</p>',
+            '<p>Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
         },
         {
-          header: 'STIHL in einem neuen Licht – Anke Kleinschmit',
+          header: 'Lorem ipsum dolor sit amet consectetur.',
           body:
-            '<p>In der Jury zu sitzen, war nicht ganz einfach. Auf den ersten Blick haben mich alle Ideen und vor ' +
-            'allem ihre Bandbreite enorm begeistert. Es ging um innovative Vertriebs- und Geschäftsmodelle, digitale ' +
-            'Angebote sowie Produktoptimierungen und gänzlich neue Produktideen. Letztere haben mich natürlich besonders ' +
-            'interessiert.</p>',
+            '<p>Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
         },
         {
-          header: 'Akademischer Spirit im Unternehmen – Dr. Tim Gegg',
+          header: 'Lorem ipsum dolor sit amet consectetur.',
           body:
-            '<p>Ich selbst bin vor mehr als 20 Jahren von der Uni Karlsruhe – mittlerweile ist es das Karlsruher Institut für ' +
-            'Technologie (KIT) – als studentischer Mitarbeiter zu STIHL gekommen. Heute arbeite ich als Leiter der Digitalisierung ' +
-            'eng mit Studierenden zusammen, da die Abteilung zu einem Großteil aus Studenten besteht.</p>',
+            '<p>Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
         },
       ],
     }

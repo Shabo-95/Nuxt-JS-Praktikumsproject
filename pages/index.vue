@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HeaderImage />
+    <Angebote />
     <HeaderText />
     <Accordion />
     <GridContent />
@@ -10,7 +10,7 @@
 
 <script>
 // @ is an alias to /src
-import HeaderImage from '@/components/HeaderImage.vue'
+import Angebote from '@/components/Angebote.vue'
 import HeaderText from '@/components/HeaderText.vue'
 import Accordion from '@/components/Accordion.vue'
 import GridContent from '@/components/GridContent.vue'
@@ -19,7 +19,7 @@ import ImagePlaceholder from '@/components/ImagePlaceholder.vue'
 export default {
   name: 'Home',
   components: {
-    HeaderImage,
+    Angebote,
     HeaderText,
     Accordion,
     GridContent,
