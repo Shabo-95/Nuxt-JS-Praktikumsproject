@@ -2,8 +2,8 @@
   <div class="layout">
     <Navbar2 />
     <Nuxt class="main" />
-    <Overlay v-show="showModal" @close-modal="showModal = false" />
     <Footer />
+    <Overlay v-show="showModal" @close-modal="showModal = false" />
   </div>
 </template>
 
@@ -32,6 +32,7 @@ export default {
 </script>
 <style lang="scss">
 .layout {
+  // position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
