@@ -76,7 +76,7 @@ footer {
   color: #fff;
   background-color: #004a99;
   padding: 50px 20px;
-  margin-top: 100px;
+  margin-top: auto;
   position: relative;
 
   .custom-container {

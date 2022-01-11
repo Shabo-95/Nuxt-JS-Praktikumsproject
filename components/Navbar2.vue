@@ -91,7 +91,6 @@ header {
   transition: 0.5s ease all;
   color: #fff;
   padding: 20px 20px 50px 20px;
-  margin-bottom: 100px;
 
   nav {
     position: relative;
