@@ -32,14 +32,25 @@ export default {
     }
   },
 
+  methods: {
+    resizeEventHandler() {
+      console.log('resizing!!!!!')
+      this.changeImage()
+    },
+    changeImage() {
+      if (window.innerWidth > 600) {
+        console.log('Image Big')
+        this.image = 'https://via.placeholder.com/600'
+      } else {
+        console.log('Image Small')
+        this.image = 'https://via.placeholder.com/300'
+      }
+    },
+  },
+
   mounted() {
-    if (window.innerWidth > 600) {
-      console.log('Image Big')
-      this.image = 'https://via.placeholder.com/600'
-    } else {
-      console.log('Image Small')
-      this.image = 'https://via.placeholder.com/300'
-    }
+    this.changeImage()
+    window.addEventListener('resize', this.resizeEventHandler)
   },
 }
 </script>

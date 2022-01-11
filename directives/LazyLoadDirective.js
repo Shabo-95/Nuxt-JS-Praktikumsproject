@@ -18,6 +18,13 @@ export default {
         if (entry.isIntersecting) {
           loadImage()
           observer.unobserve(el)
+          window.addEventListener('resize', () => {
+            if (window.innerWidth > 600) {
+              loadImage()
+            } else {
+              loadImage()
+            }
+          })
         }
       })
     }
