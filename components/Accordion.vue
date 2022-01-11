@@ -1,12 +1,14 @@
 <template>
-  <div class="accordion">
-    <AccordionItems
-      v-for="(item, id) in items"
-      :key="id"
-      v-bind="item"
-      @clicked="itemClicked"
-      :id="id"
-    />
+  <div class="AccCustomContainer">
+    <div class="accordion">
+      <AccordionItems
+        v-for="(item, id) in items"
+        :key="id"
+        v-bind="item"
+        @clicked="itemClicked"
+        :id="id"
+      />
+    </div>
   </div>
 </template>
 
@@ -78,11 +80,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.accordion {
-  max-width: 50%;
-  margin: 5% auto;
-  overflow: hidden;
-  border-radius: 4px;
-  font-family: $acc-font;
+
+.AccCustomContainer {
+  @include flexCenter;
+
+  .accordion {
+    width: 75%;
+    margin: 5% auto;
+    overflow: hidden;
+    border-radius: 4px;
+    font-family: $acc-font;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .accordion {
+      width: 60%;
+    }
+  }
 }
 </style>

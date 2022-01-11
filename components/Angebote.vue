@@ -1,6 +1,6 @@
 <template>
-  <div class="container mt-5 mb-5" style="background-color: #fffbc8">
-    <div class="row custom-border border-primary">
+  <div class="container custom-border-radius mt-5 mb-5" style="background-color: #fffbc8">
+    <div class="row">
       <div
         class="col-md-5 p-3 d-flex justify-content-center align-items-center"
       >
@@ -12,7 +12,7 @@
           width="300"
         />
       </div>
-      <div class="col-md-7 p-5 p-md-2 border-primary custom-border-left">
+      <div class="col-md-7 p-5 p-md-2">
         <h1 class="p-4">Bis zu 50% Rabbat</h1>
         <h3 class="p-4">Nur bis zum 31. März</h3>
         <h5 class="p-4">
@@ -37,4 +37,8 @@
 export default {}
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+  .custom-border-radius {
+    border-radius: 50px;
+  }
+</style>
