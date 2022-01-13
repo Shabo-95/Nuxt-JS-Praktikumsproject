@@ -5,6 +5,7 @@
     <Accordion />
     <GridContent />
     <ImagePlaceholder :source="image" />
+    <!-- <ImagePlaceholder :source="image" /> -->
   </div>
 </template>
 

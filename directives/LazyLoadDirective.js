@@ -9,7 +9,9 @@ export default {
           setTimeout(() => el.classList.add('loaded'), 100)
         })
         imageElement.addEventListener('error', () => console.log('error'))
-        imageElement.src = imageElement.dataset.url
+        if (imageElement.src != imageElement.dataset.url) {
+          imageElement.src = imageElement.dataset.url
+        }
       }
     }
 
