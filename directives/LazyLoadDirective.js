@@ -19,16 +19,20 @@ export default {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           loadImage()
-          observer.unobserve(el)
-          window.addEventListener('resize', () => {
-            if (window.innerWidth > 600) {
-              loadImage()
-            } else {
-              loadImage()
-            }
-          })
+          // observer.unobserve(el)
+          window.addEventListener('resize', resizeHandlerWithLazyLoading)
+        } else {
+          window.removeEventListener('resize', resizeHandlerWithLazyLoading)
         }
       })
+    }
+
+    function resizeHandlerWithLazyLoading() {
+      if (window.innerWidth > 600) {
+        loadImage()
+      } else {
+        loadImage()
+      }
     }
 
     function createObserver() {

@@ -8,7 +8,7 @@
           alt=""
         />
       </div>
-      <div class="custom-modal-content">
+      <div class="custom-modal__content">
         <h6>Produkt ist im Warenkorb!</h6>
         <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
         <button class="btn btn-primary">zur Kasse gehen</button>
@@ -24,7 +24,7 @@
 export default {}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -45,10 +45,10 @@ export default {}
   margin-top: 10%;
   /* padding: 60px 0; */
   border-radius: 20px;
-}
 
-.custom-modal-content {
-  margin-top: 150px;
+  &__content {
+    margin-top: 150px;
+  }
 }
 
 .close {

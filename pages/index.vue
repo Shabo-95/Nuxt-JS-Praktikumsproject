@@ -4,7 +4,7 @@
     <HeaderText />
     <Accordion />
     <GridContent />
-    <ImagePlaceholder :source="image" />
+    <ImagePlaceholder :source="image" id="bottomImage" />
     <!-- <ImagePlaceholder :source="image" /> -->
   </div>
 </template>
