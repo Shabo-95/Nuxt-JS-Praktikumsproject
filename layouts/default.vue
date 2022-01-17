@@ -3,7 +3,7 @@
     <Navbar2 />
     <Nuxt class="main" />
     <Footer />
-    <Overlay v-show="showModal" @close-modal="showModal = false" />
+    <Overlay v-show="showModal" @close-modal="closeModal" />
   </div>
 </template>
 
@@ -26,7 +26,14 @@ export default {
   created() {
     this.$nuxt.$on('open-modal', () => {
       this.showModal = true
+      document.body.classList.add('noscroll')
     })
+  },
+  methods: {
+    closeModal() {
+      this.showModal = false
+      document.body.classList.remove('noscroll')
+    },
   },
 }
 </script>
@@ -40,5 +47,8 @@ export default {
 .main {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.noscroll {
+  overflow: hidden;
 }
 </style>

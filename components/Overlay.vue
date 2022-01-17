@@ -11,6 +11,15 @@
       <div class="custom-modal__content">
         <h6>Produkt ist im Warenkorb!</h6>
         <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
+        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
+        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
+        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
+        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
+        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
+        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
+        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
+        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
+        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
         <button class="btn btn-primary">zur Kasse gehen</button>
       </div>
     </div>
@@ -48,6 +57,8 @@ export default {}
 
   &__content {
     margin-top: 150px;
+    height: 250px;
+    overflow-y: auto;
   }
 }
 
