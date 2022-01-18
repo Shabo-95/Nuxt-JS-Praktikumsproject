@@ -1,11 +1,11 @@
 <template>
   <div class="home">
     <Angebote />
+    <!-- <ImagePlaceholder :source="image" /> -->
     <HeaderText />
     <Accordion />
     <GridContent />
     <ImagePlaceholder :source="image" />
-    <!-- <ImagePlaceholder :source="image" /> -->
   </div>
 </template>
 
