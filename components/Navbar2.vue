@@ -22,8 +22,8 @@
       <ul v-show="!mobile" class="navigation">
         <li><NuxtLink class="link" to="/products">Produkte</NuxtLink></li>
         <li><NuxtLink class="link" to="/categories">Kategorien</NuxtLink></li>
+        <li><NuxtLink class="link" to="/users">Users</NuxtLink></li>
         <li><NuxtLink class="link" to="/about">About</NuxtLink></li>
-        <li><NuxtLink class="link" to="/about">Kontakt</NuxtLink></li>
       </ul>
       <div class="icon">
         <font-awesome-icon

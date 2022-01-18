@@ -1,6 +1,6 @@
 <template>
   <div class="flex-center custom-margin">
-    <figure v-lazyload class="image__wrapper" :id="id">
+    <figure v-lazyload class="image__wrapper">
       <ImageSpinner class="image__spinner" />
       <img
         class="card-img-top p-4 image__item image__custom"
@@ -28,10 +28,6 @@ export default {
     //   required: true,
     // },
     source: {
-      type: String,
-      required: true,
-    },
-    id: {
       type: String,
       required: true,
     },
