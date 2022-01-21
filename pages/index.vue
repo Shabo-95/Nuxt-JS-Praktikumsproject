@@ -5,6 +5,8 @@
     <HeaderText />
     <Accordion />
     <GridContent />
+    <GridContent2 />
+    <PhotoGrid />
     <ImagePlaceholder :source="image" />
   </div>
 </template>
@@ -15,6 +17,7 @@ import Angebote from '@/components/Angebote.vue'
 import HeaderText from '@/components/HeaderText.vue'
 import Accordion from '@/components/Accordion.vue'
 import GridContent from '@/components/GridContent.vue'
+import GridContent2 from '@/components/GridContent2.vue'
 import ImagePlaceholder from '@/components/ImagePlaceholder.vue'
 
 export default {
@@ -24,6 +27,7 @@ export default {
     HeaderText,
     Accordion,
     GridContent,
+    GridContent2,
     ImagePlaceholder,
   },
 

@@ -1,9 +1,16 @@
 <template>
-  <UsersList />
+  <div>
+    <UsersList />
+    <!-- <Card /> -->
+  </div>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.custom-container {
+  padding: 1rem;
+}
+</style>
