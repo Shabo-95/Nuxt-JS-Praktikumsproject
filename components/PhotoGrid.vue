@@ -12,9 +12,15 @@
         alt="image2"
       />
     </div>
-    <div class="card card-wide">
+    <div class="card">
       <img
         src="https://images.unsplash.com/photo-1583531172005-814191b8b6c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80"
+        alt="image2"
+      />
+    </div>
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1583445013765-46c20c4a6772?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
         alt="image2"
       />
     </div>
@@ -24,16 +30,9 @@
         alt="image2"
       />
     </div>
-
     <div class="card">
       <img
         src="https://images.unsplash.com/photo-1583532452513-a02186582ccd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-        alt="image2"
-      />
-    </div>
-    <div class="card">
-      <img
-        src="https://images.unsplash.com/photo-1583445013765-46c20c4a6772?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
         alt="image2"
       />
     </div>

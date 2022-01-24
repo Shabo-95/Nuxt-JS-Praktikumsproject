@@ -1,6 +1,7 @@
 <template>
   <div>
     <ProductSearch :products="products" />
+    <ProductSearch2 :products="products" />
   </div>
 </template>
 

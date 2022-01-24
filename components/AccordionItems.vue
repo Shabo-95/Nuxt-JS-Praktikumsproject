@@ -72,10 +72,11 @@ export default {
   justify-content: space-between;
   padding: 0.75rem 1rem;
   width: 100%;
-  background: #1f8dd6;
+  background: #007bff;
   border: none;
   outline: none;
   border-bottom: 1px solid #54a0ff;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
   color: #f3f3f3;
   cursor: pointer;
 }
