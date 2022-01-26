@@ -28,11 +28,7 @@ export default {
     }
 
     function resizeHandlerWithLazyLoading() {
-      if (window.innerWidth > 600) {
-        loadImage()
-      } else {
-        loadImage()
-      }
+      loadImage()
     }
 
     function createObserver() {
