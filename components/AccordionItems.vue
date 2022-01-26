@@ -92,7 +92,7 @@ export default {
 }
 
 .accordion__header {
-  .active svg {
+  .active & svg {
     transform: rotate(180deg);
     transition: all 0.5s ease-in-out;
   }
