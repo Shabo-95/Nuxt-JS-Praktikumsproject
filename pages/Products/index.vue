@@ -1,7 +1,7 @@
 <template>
   <div>
     <ProductSearch :products="products" />
-    <ProductSearch2 :products="products" />
+    <ProductSearchWithoutBootstrap :products="products" />
   </div>
 </template>
 
