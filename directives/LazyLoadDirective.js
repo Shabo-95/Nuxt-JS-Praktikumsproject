@@ -1,9 +1,8 @@
 export default {
   inserted: (el) => {
     function loadImage() {
-      const imageElement = Array.from(el.children).find(
-        (el) => el.nodeName === 'IMG'
-      )
+      console.log('loadImage()')
+      const imageElement = imageElementArray()
       if (imageElement) {
         imageElement.addEventListener('load', () => {
           setTimeout(() => el.classList.add('loaded'), 100)
@@ -13,6 +12,10 @@ export default {
           imageElement.src = imageElement.dataset.url
         }
       }
+    }
+
+    function imageElementArray() {
+      return Array.from(el.children).find((el) => el.nodeName === 'IMG')
     }
 
     function handleIntersect(entries, observer) {
@@ -28,7 +31,13 @@ export default {
     }
 
     function resizeHandlerWithLazyLoading() {
-      loadImage()
+      // console.log('el', el)
+      const imageElement = imageElementArray()
+
+      if (imageElement && imageElement.src != imageElement.dataset.url) {
+        imageElement.src = imageElement.dataset.url
+      }
+      // loadImage()
     }
 
     function createObserver() {
