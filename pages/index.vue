@@ -2,7 +2,7 @@
   <div class="home">
     <Angebote />
     <!-- <ImagePlaceholder :source="image" /> -->
-    <HeaderText />
+    <HeaderText :title="title" :body="body" />
     <Accordion />
     <GridContent />
     <GridContent2 />
@@ -33,6 +33,8 @@ export default {
 
   data() {
     return {
+      title: 'Lorem ipsum dolor sit amet consectetur.',
+      body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque nobis totam eum aspernatur, magnam sunt dolorem harum unde facere enim nisi modi error ducimus deleniti dolorum perferendis cum quas! Ea quod distinctio modi neque incidunt laboriosam, similique perferendis voluptas error enim, vitae dolorem maxime aut dignissimos laborum quos architecto velit et nam esse officia voluptatibus. Hic consectetur ullam fuga! Rerum, totam! Cum, inventore quidem asperiores vel voluptate obcaecati ipsam consectetur, molestiae, debitis odit maiores ad! Ex culpa consequatur eum? Ducimus ratione beatae esse.',
       image: '',
     }
   },
