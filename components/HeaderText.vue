@@ -1,9 +1,7 @@
 <template>
   <div class="customContainer">
     <div class="customContainer__content">
-      <h1 class="customContainer__h1">
-        {{ title }}
-      </h1>
+      <h1 class="customContainer__h1" v-html="title"></h1>
       <p v-html="body"></p>
     </div>
   </div>
