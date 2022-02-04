@@ -7,7 +7,7 @@
     <GridContent />
     <GridContent2 />
     <PhotoGrid />
-    <ImagePlaceholder :source="image" />
+    <ImagePlaceholder v-bind="sources" />
   </div>
 </template>
 
@@ -35,29 +35,11 @@ export default {
     return {
       title: 'Lorem ipsum dolor sit amet consectetur.',
       body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque nobis totam eum aspernatur, magnam sunt dolorem harum unde facere enim nisi modi error ducimus deleniti dolorum perferendis cum quas! Ea quod distinctio modi neque incidunt laboriosam, similique perferendis voluptas error enim, vitae dolorem maxime aut dignissimos laborum quos architecto velit et nam esse officia voluptatibus. Hic consectetur ullam fuga! Rerum, totam! Cum, inventore quidem asperiores vel voluptate obcaecati ipsam consectetur, molestiae, debitis odit maiores ad! Ex culpa consequatur eum? Ducimus ratione beatae esse.',
-      image: '',
+      sources: {
+        imageBig: 'https://via.placeholder.com/600',
+        imageSmall: 'https://via.placeholder.com/300',
+      },
     }
-  },
-
-  methods: {
-    resizeEventHandler() {
-      console.log('resizing!!!!!')
-      this.changeImage()
-    },
-    changeImage() {
-      if (window.innerWidth > 600) {
-        console.log('Image Big')
-        this.image = 'https://via.placeholder.com/600'
-      } else {
-        console.log('Image Small')
-        this.image = 'https://via.placeholder.com/300'
-      }
-    },
-  },
-
-  mounted() {
-    this.changeImage()
-    window.addEventListener('resize', this.resizeEventHandler)
   },
 }
 </script>

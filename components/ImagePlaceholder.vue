@@ -19,18 +19,39 @@ export default {
     ImageSpinner,
   },
   props: {
-    // sourceSmall: {
-    //   type: String,
-    //   required: true,
-    // },
-    // sourceBig: {
-    //   type: String,
-    //   required: true,
-    // },
-    source: {
+    imageBig: {
       type: String,
       required: true,
     },
+    imageSmall: {
+      type: String,
+      required: true,
+    },
+  },
+  data() {
+    return {
+      source: '',
+    }
+  },
+  methods: {
+    resizeEventHandler() {
+      console.log('resizing!!!!!')
+      this.changeImage()
+    },
+    changeImage() {
+      if (window.innerWidth > 600) {
+        console.log('Image Big')
+        this.source = this.imageBig
+      } else {
+        console.log('Image Small')
+        this.source = this.imageSmall
+      }
+    },
+  },
+
+  mounted() {
+    this.changeImage()
+    window.addEventListener('resize', this.resizeEventHandler)
   },
 }
 </script>
