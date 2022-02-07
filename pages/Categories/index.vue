@@ -1,5 +1,8 @@
 <template>
-  <Categories :categories="categories" />
+  <div>
+    <Categories :categories="categories" />
+    <Categories2 :categories="categories" />
+  </div>
 </template>
 
 <script>
