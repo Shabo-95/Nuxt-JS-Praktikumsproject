@@ -73,6 +73,7 @@ export default {
   padding: 0.75rem 1rem;
   width: 100%;
   background: #007bff;
+  transition: 0.5s ease all;
   border: none;
   outline: none;
   border-bottom: 1px solid #54a0ff;
@@ -89,6 +90,11 @@ export default {
   .active & {
     background-color: #1070b1;
   }
+}
+
+.accordion__header:hover {
+  background-color: #1070b1;
+  transition: 0.5s ease all;
 }
 
 .accordion__header {

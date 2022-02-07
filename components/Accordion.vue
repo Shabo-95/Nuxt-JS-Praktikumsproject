@@ -20,44 +20,11 @@ export default {
   components: {
     AccordionItems,
   },
-  data() {
-    return {
-      items: [
-        {
-          header: 'Lorem ipsum dolor sit amet consectetur.',
-          body:
-            '<p>Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam, ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam, ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
-        },
-        {
-          header: 'Lorem ipsum dolor sit amet consectetur.',
-          body:
-            '<p>Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
-        },
-        {
-          header: 'Lorem ipsum dolor sit amet consectetur.',
-          body:
-            '<p>Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
-        },
-        {
-          header: 'Lorem ipsum dolor sit amet consectetur.',
-          body:
-            '<p>Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
-            'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
-        },
-      ],
-    }
+  props: {
+    items: {
+      type: Array,
+      required: true,
+    },
   },
 
   // Wichtig: $emit send variables and elements
@@ -67,20 +34,10 @@ export default {
       // console.log('data.el', data.el)
     },
   },
-
-  // mounted: function () {
-  //   console.log("ready !!!")
-  //   window.addEventListener('resize', this.openCloseAccordion)
-  // },
-  // beforeDestroy: function () {
-  //   console.log("beforeDestroy !!!")
-  //   window.removeEventListener('resize', this.openCloseAccordion)
-  // }
 }
 </script>
 
 <style lang="scss" scoped>
-
 .AccCustomContainer {
   @include flexCenter;
 

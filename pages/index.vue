@@ -4,7 +4,7 @@
     <Angebote2 />
     <!-- <ImagePlaceholder :source="image" /> -->
     <HeaderText :title="title" :body="body" />
-    <Accordion />
+    <Accordion :items="items" />
     <GridContent />
     <GridContent2 />
     <PhotoGrid />
@@ -42,6 +42,41 @@ export default {
         imageBig: 'https://via.placeholder.com/600',
         imageSmall: 'https://via.placeholder.com/300',
       },
+      items: [
+        {
+          header: 'Lorem ipsum dolor sit amet consectetur.',
+          body:
+            '<p>Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam, ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam, ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
+        },
+        {
+          header: 'Lorem ipsum dolor sit amet consectetur.',
+          body:
+            '<p>Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
+        },
+        {
+          header: 'Lorem ipsum dolor sit amet consectetur.',
+          body:
+            '<p>Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
+        },
+        {
+          header: 'Lorem ipsum dolor sit amet consectetur.',
+          body:
+            '<p>Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam ' +
+            'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
+        },
+      ],
     }
   },
 }
