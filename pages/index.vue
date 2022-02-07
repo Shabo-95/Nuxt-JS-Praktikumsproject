@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Angebote />
+    <!-- <Angebote /> -->
     <Angebote2 />
     <!-- <ImagePlaceholder :source="image" /> -->
     <HeaderText :title="title" :body="body" />

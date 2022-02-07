@@ -86,6 +86,9 @@ export default {}
   .custom-image {
     padding: 1rem;
   }
+  .title {
+    font-size: 32px;
+  }
   .angebote {
     padding: 1rem;
   }
@@ -101,6 +104,7 @@ export default {}
   }
   .title {
     text-align: center;
+    font-size: 40px;
   }
   .sub-title {
     text-align: center;
