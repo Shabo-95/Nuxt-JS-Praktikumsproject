@@ -1,27 +1,10 @@
 <template>
   <div class="grid-container">
-    <div
-      class="grid-item"
+    <CardItems
       v-for="product in filteredProducts"
       :key="product.id"
       v-bind="product"
-    >
-      <div class="card-custom">
-        <img
-          class="grid-image"
-          :src="product.image"
-          alt="image2"
-          width="240"
-          height="240"
-        />
-        <div class="card-body-custom">
-          <h4 class="card-title-custom">{{ product.title }}</h4>
-        </div>
-        <div class="card-footer-custom">
-          <p class="card-text-custom">Price: {{ product.price }}$</p>
-        </div>
-      </div>
-    </div>
+    />
   </div>
 </template>
 
@@ -48,20 +31,6 @@ export default {
   padding: 10px;
 }
 
-.grid-item {
-  //   background-color: rgba(255, 255, 255, 0.8);
-  //   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-@media screen and (max-width: 1140px) {
-  .grid-item {
-    padding: 0;
-  }
-}
-
 @media screen and (max-width: 990px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -73,37 +42,4 @@ export default {
     grid-template-columns: auto;
   }
 }
-
-.card-custom {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  width: 288px;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.grid-image {
-  padding: 1rem;
-}
-
-.card-body-custom {
-  padding: 1.25rem;
-  text-align: center;
-}
-
-.card-title-custom {
-  font-size: 24px;
-  padding-bottom: 0.5rem;
-}
-
-.card-text-custom {
-  font-size: 16px;
-}
-
-// .grid-image {
-//   object-fit: cover;
-//   width: 100%;
-// }
 </style>
