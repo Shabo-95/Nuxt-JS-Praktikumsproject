@@ -61,6 +61,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   background-color: #fffbc8;
+  box-shadow: 0 0 10px #f0ad4e;
 }
 .custom-image {
   display: flex;

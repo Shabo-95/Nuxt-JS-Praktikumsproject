@@ -50,6 +50,7 @@ export default {
 <style lang="scss" scoped>
 .border-rad {
   border-radius: 50px;
+  box-shadow: 0 0 10px #0275d8;
 }
 .productSearch-div {
   position: relative;

@@ -22,10 +22,11 @@ export default {
 <style lang="scss" scoped>
 .grid-container {
   max-width: 1140px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-gap: 20px 20px;
+  grid-gap: 60px 20px;
   grid-template-columns: repeat(3, 1fr);
   //   background-color: #2196f3;
   padding: 10px;
