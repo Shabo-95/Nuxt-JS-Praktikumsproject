@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Categories :categories="categories" />
+    <!-- <Categories :categories="categories" /> -->
     <Categories2 :categories="categories" />
   </div>
 </template>
