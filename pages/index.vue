@@ -1,7 +1,12 @@
 <template>
   <div class="home">
     <!-- <Angebote /> -->
-    <Angebote2 />
+    <Angebote2
+      :image="image"
+      :angebotTitle="angebotTitle"
+      :subTitle="subTitle"
+      :text="text"
+    />
     <!-- <ImagePlaceholder :source="image" /> -->
     <HeaderText :title="title" :body="body" />
     <Accordion :items="items" />
@@ -77,6 +82,10 @@ export default {
             'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
         },
       ],
+      image: require('@/assets/images/header-image/sale.jpeg'),
+      angebotTitle: 'Bis zu 50% Rabbat',
+      subTitle: 'Nur bis zum 31. März',
+      text: 'Lassen Sie sich von uns vor Ort begeistern und besuchen Sie uns in unserem Geschäft in der Flachstraße in dem Westcenter, Wir werden uns auf Sie freuen.',
     }
   },
 }

@@ -9,12 +9,10 @@
       />
     </div>
     <div class="angebote">
-      <h1 class="title">Bis zu 50% Rabbat</h1>
-      <h3 class="sub-title">Nur bis zum 31. März</h3>
+      <h1 class="title">{{ angebotTitle }}</h1>
+      <h3 class="sub-title">{{ subTitle }}</h3>
       <h5 class="text">
-        Lassen Sie sich von uns vor Ort begeistern und besuchen Sie uns in
-        unserem Geschäft in der Flachstraße in dem Westcenter, Wir werden uns
-        auf Sie freuen.
+        {{ text }}
       </h5>
 
       <button class="custom-button" @click="$nuxt.$emit('open-modal')">
@@ -25,7 +23,26 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    image: {
+      type: String,
+      required: true,
+    },
+    angebotTitle: {
+      type: String,
+      required: true,
+    },
+    subTitle: {
+      type: String,
+      required: true,
+    },
+    text: {
+      type: String,
+      required: true,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>

@@ -18,10 +18,6 @@
 <script>
 export default {
   props: {
-    filteredProducts: {
-      type: Array,
-      required: true,
-    },
     id: {
       type: Number,
       required: true,
