@@ -1,6 +1,6 @@
 <template>
   <div class="custom-container">
-    <CategoryItems
+    <CategoriesCardItems
       v-for="category in categories"
       :key="category.title"
       v-bind="category"
@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import CategoriesList from '~/components/CategoriesList.vue'
+import CategoriesCard from '~/components/CategoriesCard.vue'
 
 export default {
   components: {
-    CategoriesList,
+    CategoriesCard,
   },
   props: {
     categories: {
@@ -27,28 +27,45 @@ export default {
 }
 </script>
 
+//
 <style lang="scss" scoped>
 .custom-container {
-  max-width: 1340px;
-  margin-left: auto;
-  margin-right: auto;
-  // border: 10px solid blue;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
   flex-wrap: wrap;
-  padding: 5%;
+  // padding: 5%;
 }
 .custom-container > div {
-  flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+  flex: 0 0 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
   /*demo*/
 }
 
-// @media (max-width: 1200px) {
-//   .custom-container {
-//     max-width: 960px;
-//   }
+// .custom-container {
+//   max-width: 1340px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   // border: 10px solid blue;
+//   display: flex;
+//   // align-items: center;
+//   // justify-content: center;
+//   flex-wrap: wrap;
+//   padding: 5%;
 // }
+// .custom-container > div {
+//   flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+//   /*demo*/
+// }
+
+@media (max-width: 1200px) {
+  .custom-container {
+    max-width: 960px;
+  }
+}
 
 @media (max-width: 992px) {
   .custom-container {
@@ -58,14 +75,15 @@ export default {
 }
 
 @media (max-width: 768px) {
-  .custom-container {
-    flex: 100%;
+  .custom-container > div {
+    flex: 0 0 100%;
   }
 }
 
-// @media (max-width: 576px) {
-//   .custom-container {
-//     max-width: 540px;
-//   }
-// }
+// // @media (max-width: 576px) {
+// //   .custom-container {
+// //     max-width: 540px;
+// //   }
+// // }
+//
 </style>
