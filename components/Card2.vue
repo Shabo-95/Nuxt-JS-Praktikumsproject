@@ -22,7 +22,7 @@ export default {
 <style lang="scss" scoped>
 .grid-container {
   max-width: 1140px;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   display: grid;

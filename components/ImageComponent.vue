@@ -2,7 +2,7 @@
   <figure v-lazyload class="image__wrapper">
     <ImageSpinner class="image__spinner" />
     <img
-      class="card-img-top p-4 image__item image__custom"
+      class="image__item image__custom"
       :data-url="source"
       alt="no picture available"
       :height="height"
@@ -82,13 +82,14 @@ export default {
   &__item {
     width: 100%;
     border-radius: 4px;
+    padding: 1.5rem;
     transition: all 0.4s ease-in-out;
     opacity: 0;
     visibility: hidden;
   }
 
-  &__custom:hover {
-    padding: 0.5rem !important;
-  }
+  // &__custom:hover {
+  //   padding: 0.5rem !important;
+  // }
 }
 </style>

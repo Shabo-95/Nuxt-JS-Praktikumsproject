@@ -56,8 +56,8 @@ export default {
 .card-custom {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
 
   background-color: white;
   border: 1px solid #f0ad4e;
@@ -118,6 +118,7 @@ export default {
 
 .nav-link {
   width: 100%;
+  padding: 0;
 }
 
 // .grid-image {
