@@ -1,5 +1,5 @@
 <template>
-  <ProductDetails2 :productDetails="productDetails" />
+  <ProductDetails2 v-bind="productDetails" />
 </template>
 
 <script>

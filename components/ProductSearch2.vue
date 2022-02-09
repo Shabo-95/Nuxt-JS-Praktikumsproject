@@ -1,6 +1,6 @@
 <template>
   <div class="productSearch-div">
-    <SearchComponent v-on:updateSearchText="updateText($event)" />
+    <!-- <SearchComponent v-on:updateSearchText="updateText($event)" /> -->
     <SearchComponent2 v-on:updateSearchText="updateText($event)" />
     <Products2 :filteredProducts="filteredProducts" />
   </div>

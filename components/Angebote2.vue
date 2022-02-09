@@ -91,6 +91,10 @@ export default {
   width: 100%;
 }
 
+.custom-button:hover {
+  background-color: #0069d9;
+}
+
 @media (max-width: 1200px) {
   .custom-container {
     max-width: 960px;
