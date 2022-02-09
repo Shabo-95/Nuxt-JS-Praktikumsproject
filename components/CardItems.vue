@@ -1,7 +1,12 @@
 <template>
   <NuxtLink class="nav-link" :to="`/Products/${id}`">
     <div class="card-custom">
-      <ImageComponent :source="image" :height="240" :width="180" />
+      <ImageComponent
+        :source="image"
+        :height="240"
+        :width="180"
+        class="grid-image"
+      />
       <div class="card-body-custom">
         <h4 class="card-title-custom">{{ title }}</h4>
       </div>
@@ -77,7 +82,7 @@ export default {
 }
 
 .grid-image {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .card-body-custom {

@@ -81,15 +81,9 @@ export default {
 
   &__item {
     width: 100%;
-    border-radius: 4px;
-    padding: 1.5rem;
     transition: all 0.4s ease-in-out;
     opacity: 0;
     visibility: hidden;
   }
-
-  // &__custom:hover {
-  //   padding: 0.5rem !important;
-  // }
 }
 </style>

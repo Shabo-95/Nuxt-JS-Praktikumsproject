@@ -1,14 +1,13 @@
 <template>
   <div class="productSearch-div">
-    <!-- <SearchComponent v-on:updateSearchText="updateText($event)" /> -->
-    <SearchComponent2 v-on:updateSearchText="updateText($event)" />
-    <Products2 :filteredProducts="filteredProducts" />
+    <SearchComponent v-on:updateSearchText="updateText($event)" />
+    <Products :filteredProducts="filteredProducts" />
   </div>
 </template>
 
 <script>
-import SearchComponent from '~/components/withBootstrap/SearchComponent.vue'
-import Products from '~/components/withBootstrap/Products.vue'
+import SearchComponent from '~/components/SearchComponent.vue'
+import Products from '~/components/Products.vue'
 
 export default {
   components: {

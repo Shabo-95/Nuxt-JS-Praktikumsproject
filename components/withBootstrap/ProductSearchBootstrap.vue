@@ -1,9 +1,9 @@
 <template>
   <div class="productSearch-div">
-    <SearchComponent v-on:updateSearchText="updateText($event)" />
+    <SearchComponentBootstrap v-on:updateSearchText="updateText($event)" />
     <div class="container mb-5">
       <div class="row justify-content-around">
-        <Products
+        <ProductsBootstrap
           v-for="product in filteredProducts"
           :key="product.id"
           v-bind="product"
@@ -14,13 +14,13 @@
 </template>
 
 <script>
-import SearchComponent from '~/components/withBootstrap/SearchComponent.vue'
-import Products from '~/components/withBootstrap/Products.vue'
+import SearchComponentBootstrap from '~/components/withBootstrap/SearchComponentBootstrap.vue'
+import ProductsBootstrap from '~/components/withBootstrap/ProductsBootstrap.vue'
 
 export default {
   components: {
-    SearchComponent,
-    Products,
+    SearchComponentBootstrap,
+    ProductsBootstrap,
   },
   props: {
     products: {

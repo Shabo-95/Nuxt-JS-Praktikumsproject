@@ -1,13 +1,18 @@
 <template>
   <div class="card-container">
-    <div class="card-custom">
-      <NuxtLink class="nav-link" :to="`/Categories/${title}`">
-        <ImageComponent :source="image" :height="240" :width="180" />
-      </NuxtLink>
-      <div class="card-footer-custom">
-        <p class="card-text-custom">{{ title }}</p>
+    <NuxtLink class="nav-link" :to="`/Categories/${title}`">
+      <div class="card-custom">
+        <ImageComponent
+          :source="image"
+          :height="240"
+          :width="180"
+          class="card-image"
+        />
+        <div class="card-footer-custom">
+          <p class="card-text-custom">{{ title }}</p>
+        </div>
       </div>
-    </div>
+    </NuxtLink>
   </div>
 </template>
 
@@ -28,13 +33,13 @@ export default {
 
 <style lang="scss" scoped>
 .card-container {
-  width: 18rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .card-custom {
+  width: 18rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
   box-shadow: 0 0 10px #f0ad4e;
   border-radius: 50px;
@@ -45,9 +50,18 @@ export default {
   transform: scale(1.1);
 }
 
+.nav-link {
+  padding: 0;
+}
+
+.card-image {
+  padding: 2rem;
+}
+
 .card-text-custom {
   font-weight: bold;
   text-transform: uppercase;
+  color: #000;
   padding-bottom: 0.5rem;
 }
 .card-footer-custom {

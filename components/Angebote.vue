@@ -1,44 +1,144 @@
 <template>
-  <div class="container custom-border-radius mt-5 mb-5" style="background-color: #fffbc8">
-    <div class="row">
-      <div
-        class="col-md-5 p-3 d-flex justify-content-center align-items-center"
-      >
-        <img
-          src="@/assets/images/header-image/sale.jpeg"
-          class="image__custom"
-          alt="No Picture"
-          height="300"
-          width="300"
-        />
-      </div>
-      <div class="col-md-7 p-5 p-md-2">
-        <h1 class="p-4">Bis zu 50% Rabbat</h1>
-        <h3 class="p-4">Nur bis zum 31. März</h3>
-        <h5 class="p-4">
-          Lassen Sie sich von uns vor Ort begeistern und besuchen Sie uns in
-          unserem Geschäft in der Flachstraße in dem Westcenter, Wir werden uns
-          auf Sie freuen.
-        </h5>
-        <div class="d-flex justify-content-center align-items-center m-3">
-          <button
-            class="btn w-100 custom-border-radius btn-primary p-3"
-            @click="$nuxt.$emit('open-modal')"
-          >
-            Jetzt einkaufen
-          </button>
-        </div>
-      </div>
+  <div class="custom-container">
+    <div class="custom-image">
+      <img
+        src="@/assets/images/header-image/sale.jpeg"
+        alt="No Picture"
+        height="300"
+        width="300"
+      />
+    </div>
+    <div class="angebote">
+      <h1 class="title">{{ angebotTitle }}</h1>
+      <h3 class="sub-title">{{ subTitle }}</h3>
+      <h5 class="text">
+        {{ text }}
+      </h5>
+
+      <button class="custom-button" @click="$nuxt.$emit('open-modal')">
+        Jetzt einkaufen
+      </button>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    image: {
+      type: String,
+      required: true,
+    },
+    angebotTitle: {
+      type: String,
+      required: true,
+    },
+    subTitle: {
+      type: String,
+      required: true,
+    },
+    text: {
+      type: String,
+      required: true,
+    },
+  },
+}
 </script>
 
 <style lang="scss" scoped>
-  .custom-border-radius {
-    border-radius: 50px;
+.custom-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  max-width: 1140px;
+
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fffbc8;
+  box-shadow: 0 0 10px #f0ad4e;
+}
+.custom-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.title {
+  padding: 1.5rem;
+}
+.sub-title {
+  padding: 1.5rem;
+}
+.text {
+  padding: 1.5rem;
+}
+.angebote {
+  padding: 1rem;
+}
+.custom-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.custom-button:hover {
+  background-color: #0069d9;
+}
+
+@media (max-width: 1200px) {
+  .custom-container {
+    max-width: 960px;
   }
+}
+
+@media (max-width: 992px) {
+  .custom-container {
+    max-width: 720px;
+  }
+  .custom-image {
+    padding: 1rem;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .angebote {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-container {
+    max-width: 540px;
+    flex-direction: column;
+  }
+  .angebote {
+    padding: 3rem;
+  }
+  .title {
+    text-align: center;
+    font-size: 40px;
+  }
+  .sub-title {
+    text-align: center;
+  }
+  .text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-container {
+    max-width: 540px;
+  }
+}
 </style>

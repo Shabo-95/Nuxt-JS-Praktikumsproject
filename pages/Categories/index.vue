@@ -1,12 +1,11 @@
 <template>
   <div>
-    <!-- <Categories :categories="categories" /> -->
-    <Categories2 :categories="categories" />
+    <Categories :categories="categories" />
   </div>
 </template>
 
 <script>
-import Categories from '~/components/withBootstrap/Categories.vue'
+import Categories from '~/components/Categories.vue'
 export default {
   components: { Categories },
   data() {

@@ -1,12 +1,11 @@
 <template>
   <div>
-    <!-- <ProductSearch :products="products" /> -->
-    <ProductSearch2 :products="products" />
+    <ProductSearch :products="products" />
   </div>
 </template>
 
 <script>
-import ProductSearch from '~/components/withBootstrap/ProductSearch.vue'
+import ProductSearch from '~/components/ProductSearch.vue'
 export default {
   components: {
     ProductSearch,
@@ -22,5 +21,3 @@ export default {
   },
 }
 </script>
-
-<style></style>

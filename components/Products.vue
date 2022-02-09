@@ -1,13 +1,15 @@
 <template>
-  <Card2 :filteredProducts="filteredProducts" />
+  <CardProducts :filteredProducts="filteredProducts" />
 </template>
 
 <script>
-import ImageComponent from '~/components/ImageComponent.vue'
+import CardProducts from '~/components/CardProducts.vue'
 
 export default {
   name: 'Products',
-
+  components: {
+    CardProducts,
+  },
   props: {
     filteredProducts: {
       type: Array,
@@ -15,9 +17,6 @@ export default {
     },
   },
 
-  components: {
-    ImageComponent,
-  },
   // mounted() {
   //   console.log(image)
   // },

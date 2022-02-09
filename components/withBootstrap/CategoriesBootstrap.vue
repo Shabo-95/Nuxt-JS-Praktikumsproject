@@ -1,7 +1,7 @@
 <template>
   <div class="container mb-5">
     <div class="row">
-      <CategoriesList
+      <CategoriesListBootstrap
         v-for="category in categories"
         :key="category.title"
         v-bind="category"
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import CategoriesList from '~/components/withBootstrap/CategoriesList.vue'
+import CategoriesListBootstrap from '~/components/withBootstrap/CategoriesListBootstrap.vue'
 
 export default {
   components: {
-    CategoriesList,
+    CategoriesListBootstrap,
   },
   props: {
     categories: {

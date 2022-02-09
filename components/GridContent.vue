@@ -1,22 +1,28 @@
 <template>
   <div class="grid-container">
     <div class="grid-item item-1">
-      <Card />
+      <CardGrid />
     </div>
     <div class="grid-item item-2">
-      <Card />
+      <CardGrid />
     </div>
     <div class="grid-item item-3">
-      <Card />
+      <CardGrid />
     </div>
     <div class="grid-item item-4">
-      <Card />
+      <CardGrid />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import CardGrid from '~/components/CardGrid.vue'
+
+export default {
+  components: {
+    CardGrid,
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -34,48 +40,36 @@ export default {}
 }
 
 .grid-container {
-  max-width: 1140px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  // border: 10px solid blue;
   display: grid;
-  gap: 2rem;
+  grid-row-gap: 2rem;
   grid-template-columns: 1fr 1fr;
-  align-content: center;
-  justify-content: center;
-  padding: 6%;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1200px) {
   .grid-container {
-    max-width: 75%;
-    padding: 2%;
+    max-width: 800px;
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 991px) {
   .grid-container {
-    padding: 4%;
+    max-width: 600px;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .grid-container {
+    padding: 0;
     grid-template-columns: 1fr;
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 540px) {
-  .grid-container {
-    max-width: 100%;
+    max-width: 540px;
   }
 }
 
 .grid-item {
-  // background-color: orange;
-  // border: 4px solid red;
-  padding: 5px;
+  padding: 0 15px;
   text-align: center;
 }
 

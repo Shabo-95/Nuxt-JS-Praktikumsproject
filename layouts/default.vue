@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <Navbar2 />
+    <Navbar />
     <Nuxt class="main" />
     <Footer />
     <Overlay v-show="showModal" @close-modal="closeModal" />
@@ -8,13 +8,13 @@
 </template>
 
 <script>
-import Navbar2 from '../components/Navbar2.vue'
+import Navbar from '../components/Navbar.vue'
 import Overlay from '../components/Overlay.vue'
 import Footer from '../components/Footer.vue'
 
 export default {
   components: {
-    Navbar2,
+    Navbar,
     Overlay,
     Footer,
   },

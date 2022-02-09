@@ -3,7 +3,7 @@
     <figure v-lazyload class="image__wrapper">
       <ImageSpinner class="image__spinner" />
       <img
-        class="card-img-top p-4 image__item image__custom"
+        class="image__item image__custom"
         :data-url="source"
         alt="no picture available"
       />

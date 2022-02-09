@@ -70,7 +70,7 @@ export default {
 .accordion__header {
   display: flex;
   justify-content: space-between;
-  padding: 0.75rem 1rem;
+  padding: 1rem 1rem;
   width: 100%;
   background: #007bff;
   transition: 0.5s ease all;
@@ -88,12 +88,12 @@ export default {
 
 .accordion__header {
   .active & {
-    background-color: #1070b1;
+    background-color: #0069d9;
   }
 }
 
 .accordion__header:hover {
-  background-color: #1070b1;
+  background-color: #0069d9;
   transition: 0.5s ease all;
 }
 

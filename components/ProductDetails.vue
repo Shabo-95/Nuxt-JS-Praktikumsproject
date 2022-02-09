@@ -1,22 +1,14 @@
 <template>
   <div class="custom-container">
     <div class="custom-image">
-      <img
-        src="@/assets/images/header-image/sale.jpeg"
-        alt="No Picture"
-        height="300"
-        width="300"
-      />
+      <ImageComponent :source="image" :height="300" :width="300" />
     </div>
-    <div class="angebote">
-      <h1 class="title">{{ angebotTitle }}</h1>
-      <h3 class="sub-title">{{ subTitle }}</h3>
-      <h5 class="text">
-        {{ text }}
-      </h5>
-
+    <div class="details">
+      <h1 class="title">{{ title }}</h1>
+      <h5 class="description">{{ description }}</h5>
+      <h3 class="price">Price: {{ price }} $</h3>
       <button class="custom-button" @click="$nuxt.$emit('open-modal')">
-        Jetzt einkaufen
+        Warenkorb legen
       </button>
     </div>
   </div>
@@ -29,16 +21,16 @@ export default {
       type: String,
       required: true,
     },
-    angebotTitle: {
+    title: {
       type: String,
       required: true,
     },
-    subTitle: {
+    description: {
       type: String,
       required: true,
     },
-    text: {
-      type: String,
+    price: {
+      type: Number,
       required: true,
     },
   },
@@ -52,36 +44,45 @@ export default {
   align-items: center;
   justify-content: center;
 
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   padding: 1rem;
   max-width: 1140px;
 
   border-radius: 50px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #fffbc8;
   box-shadow: 0 0 10px #f0ad4e;
 }
+
 .custom-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
+  min-width: 300px;
+  padding: 1.5rem;
+  transition: all 0.5s ease-in-out;
 }
 
+.custom-image:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.details {
+  padding: 1rem;
+}
 .title {
   padding: 1.5rem;
 }
-.sub-title {
+.description {
   padding: 1.5rem;
 }
-.text {
+.price {
   padding: 1.5rem;
 }
-.angebote {
-  padding: 1rem;
-}
+
 .custom-button {
   background-color: #007bff;
   color: white;
@@ -105,14 +106,8 @@ export default {
   .custom-container {
     max-width: 720px;
   }
-  .custom-image {
-    padding: 1rem;
-  }
   .title {
     font-size: 32px;
-  }
-  .angebote {
-    padding: 1rem;
   }
 }
 
@@ -121,24 +116,21 @@ export default {
     max-width: 540px;
     flex-direction: column;
   }
-  .angebote {
-    padding: 3rem;
-  }
   .title {
     text-align: center;
     font-size: 40px;
   }
-  .sub-title {
+  .description {
     text-align: center;
   }
-  .text {
+  .price {
     text-align: center;
   }
 }
 
 @media (max-width: 576px) {
   .custom-container {
-    max-width: 540px;
+    max-width: 95%;
   }
 }
 </style>

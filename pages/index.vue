@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <!-- <Angebote /> -->
-    <Angebote2
+    <Angebote
       :image="image"
       :angebotTitle="angebotTitle"
       :subTitle="subTitle"
@@ -11,7 +10,6 @@
     <HeaderText :title="title" :body="body" />
     <Accordion :items="items" />
     <GridContent />
-    <GridContent2 />
     <PhotoGrid />
     <ImagePlaceholder v-bind="sources" />
   </div>
@@ -19,23 +17,19 @@
 
 <script>
 // @ is an alias to /src
-import Angebote from '@/components/Angebote.vue'
-import Angebote2 from '@/components/Angebote2.vue'
+import Angebote from '~/components/Angebote.vue'
 import HeaderText from '@/components/HeaderText.vue'
 import Accordion from '@/components/Accordion.vue'
-import GridContent from '~/components/withBootstrap/GridContent.vue'
-import GridContent2 from '@/components/GridContent2.vue'
+import GridContent from '~/components/GridContent.vue'
 import ImagePlaceholder from '@/components/ImagePlaceholder.vue'
 
 export default {
   name: 'Home',
   components: {
     Angebote,
-    Angebote2,
     HeaderText,
     Accordion,
     GridContent,
-    GridContent2,
     ImagePlaceholder,
   },
 

@@ -1,10 +1,8 @@
 <template>
   <div class="card-custom">
-    <img
-      class="grid-image"
-      src="@/assets/images/grid-images/placeholder.png"
-      alt="image2"
-    />
+    <div class="image-container">
+      <ImageComponent :source="image" class="image" />
+    </div>
     <div class="card-body-custom">
       <h4 class="card-title-custom">Lorem ipsum dolor sit amet consectetur.</h4>
       <p class="card-text-custom">
@@ -18,7 +16,11 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return { image: require('@/assets/images/grid-images/placeholder.png') }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -36,8 +38,16 @@ export default {}
   font-size: 16px;
 }
 
-.grid-image {
-  object-fit: cover;
-  width: 100%;
+::v-deep {
+  .image {
+    padding: 0;
+    // object-fit: cover;
+    // width: 100%;
+  }
 }
+// img {
+//   padding: 0;
+//   // object-fit: cover;
+//   // width: 100%;
+// }
 </style>
