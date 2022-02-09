@@ -23,7 +23,7 @@ import Angebote from '@/components/Angebote.vue'
 import Angebote2 from '@/components/Angebote2.vue'
 import HeaderText from '@/components/HeaderText.vue'
 import Accordion from '@/components/Accordion.vue'
-import GridContent from '@/components/GridContent.vue'
+import GridContent from '~/components/withBootstrap/GridContent.vue'
 import GridContent2 from '@/components/GridContent2.vue'
 import ImagePlaceholder from '@/components/ImagePlaceholder.vue'
 

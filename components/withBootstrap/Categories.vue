@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import CategoriesList from '~/components/CategoriesList.vue'
+import CategoriesList from '~/components/withBootstrap/CategoriesList.vue'
 
 export default {
   components: {

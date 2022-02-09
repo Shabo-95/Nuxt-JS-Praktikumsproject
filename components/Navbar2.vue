@@ -37,6 +37,16 @@
       <!-- This is The Sidebar (Mobile-Nav) -->
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
+          <li>
+            <NuxtLink to="/">
+              <img
+                src="~assets/images/logo/logo.png"
+                alt="LOGO"
+                height="64"
+                width="64"
+              />
+            </NuxtLink>
+          </li>
           <li><NuxtLink class="link" to="/Products">Produkte</NuxtLink></li>
           <li><NuxtLink class="link" to="/Categories">Kategorien</NuxtLink></li>
           <li><NuxtLink class="link" to="/about">About</NuxtLink></li>
@@ -168,19 +178,30 @@ header {
 
     .dropdown-nav {
       display: flex;
+      align-items: center;
+      // justify-content: space-evenly;
+      row-gap: 1em;
       flex-direction: column;
       position: fixed;
       width: 100%;
-      max-width: 250px;
+      max-width: 200px;
       height: 100%;
-      background-color: #fff;
+      background-color: #004a99;
+      box-shadow: 0 0 10px #000;
+      padding: 0;
+
       top: 0;
       left: 0;
 
       li {
         margin-left: 0;
         .link {
-          color: #000;
+          color: #fff;
+          transition: 0.5s ease all;
+        }
+        .link:hover {
+          color: #00afea;
+          border-color: #00afea;
         }
       }
     }
@@ -192,7 +213,7 @@ header {
 
     .mobile-nav-enter-from,
     .mobile-nav-leave-to {
-      transform: translateX(-250px);
+      transform: translateX(-200px);
     }
 
     .mobile-nav-enter-to {

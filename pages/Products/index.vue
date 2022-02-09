@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import ProductSearch from '~/components/ProductSearch.vue'
+import ProductSearch from '~/components/withBootstrap/ProductSearch.vue'
 export default {
   components: {
     ProductSearch,

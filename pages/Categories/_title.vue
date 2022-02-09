@@ -1,9 +1,9 @@
 <template>
-  <ProductSearch :products="products" />
+  <ProductSearch2 :products="products" />
 </template>
 
 <script>
-import ProductSearch from '~/components/ProductSearch.vue'
+import ProductSearch from '~/components/withBootstrap/ProductSearch.vue'
 
 export default {
   components: {

@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import SearchComponent from '~/components/SearchComponent.vue'
-import Products from '~/components/Products.vue'
+import SearchComponent from '~/components/withBootstrap/SearchComponent.vue'
+import Products from '~/components/withBootstrap/Products.vue'
 
 export default {
   components: {
