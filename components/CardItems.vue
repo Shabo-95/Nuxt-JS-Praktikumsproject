@@ -69,12 +69,11 @@ export default {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .card-custom:hover {
   transform: scale(1.1);
-  // transition: all 0.4s ease-in-out;
 }
 
 .grid-image {

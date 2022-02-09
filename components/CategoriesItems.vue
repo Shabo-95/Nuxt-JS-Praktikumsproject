@@ -36,8 +36,15 @@ export default {
 
 .card-custom {
   border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0 10px #f0ad4e;
   border-radius: 50px;
+  transition: all 0.5s ease-in-out;
 }
+
+.card-custom:hover {
+  transform: scale(1.1);
+}
+
 .card-text-custom {
   font-weight: bold;
   text-transform: uppercase;

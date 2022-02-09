@@ -49,8 +49,8 @@
           </li>
           <li><NuxtLink class="link" to="/Products">Produkte</NuxtLink></li>
           <li><NuxtLink class="link" to="/Categories">Kategorien</NuxtLink></li>
-          <li><NuxtLink class="link" to="/about">About</NuxtLink></li>
-          <li><NuxtLink class="link" to="/about">Kontakt</NuxtLink></li>
+          <li><NuxtLink class="link" to="/Users">Users</NuxtLink></li>
+          <li><NuxtLink class="link" to="/About">About</NuxtLink></li>
         </ul>
       </transition>
     </nav>
