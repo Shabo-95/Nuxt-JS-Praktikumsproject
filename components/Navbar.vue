@@ -36,7 +36,15 @@
       </div>
       <!-- This is The Sidebar (Mobile-Nav) -->
       <transition name="mobile-nav">
-        <ul v-show="mobileNav" class="dropdown-nav">
+        <ul v-show="mobileNav" class="side-nav">
+          <li>
+            <font-awesome-icon
+              @click="toggleMobileNav"
+              v-show="mobile"
+              :icon="['fas', 'angle-double-left']"
+              class="font-awesome side-nav--close"
+            />
+          </li>
           <li>
             <NuxtLink to="/">
               <img
@@ -178,7 +186,7 @@ header {
       transform: rotate(90deg);
     }
 
-    .dropdown-nav {
+    .side-nav {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -211,20 +219,27 @@ header {
           border-color: #00afea;
         }
       }
+      &--close {
+        cursor: pointer;
+        font-size: 24px;
+        position: absolute;
+        top: 5%;
+        left: 40%;
+      }
     }
 
     .mobile-nav-enter-active,
     .mobile-nav-leave-active {
-      // transition: 1s ease all;
+      transition: 1s ease all;
     }
 
     .mobile-nav-enter-from,
     .mobile-nav-leave-to {
-      // transform: translateX(-200px);
+      transform: translateX(-200px);
     }
 
     .mobile-nav-enter-to {
-      // transform: translateX(0);
+      transform: translateX(0);
     }
   }
   .wave {
