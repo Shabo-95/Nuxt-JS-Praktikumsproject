@@ -2,7 +2,7 @@ export default {
   inserted: (el) => {
     function loadImage() {
       console.log('loadImage()')
-      const imageElement = imageElementArray()
+      const imageElement = imageElementsToArray()
       if (imageElement) {
         imageElement.addEventListener('load', () => {
           setTimeout(() => el.classList.add('loaded'), 100)
@@ -14,7 +14,7 @@ export default {
       }
     }
 
-    function imageElementArray() {
+    function imageElementsToArray() {
       return Array.from(el.children).find((el) => el.nodeName === 'IMG')
     }
 
@@ -22,7 +22,7 @@ export default {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           loadImage()
-          // observer.unobserve(el)
+          observer.unobserve(el)
           window.addEventListener('resize', resizeHandlerWithLazyLoading)
         } else {
           window.removeEventListener('resize', resizeHandlerWithLazyLoading)
@@ -32,9 +32,16 @@ export default {
 
     function resizeHandlerWithLazyLoading() {
       // console.log('el', el)
-      const imageElement = imageElementArray()
+      const imageElement = imageElementsToArray()
 
-      if (imageElement && imageElement.src != imageElement.dataset.url) {
+      if (imageElement && imageElement.src !== imageElement.dataset.url) {
+        console.log(
+          'imageElement.src',
+          imageElement.src,
+          'imageElement.dataset.url',
+          imageElement.dataset.url
+        )
+        console.log('True')
         imageElement.src = imageElement.dataset.url
       }
       // loadImage()

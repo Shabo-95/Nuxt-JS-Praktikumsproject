@@ -48,7 +48,9 @@
             </NuxtLink>
           </li>
           <li><NuxtLink class="link" to="/Products">Produkte</NuxtLink></li>
-          <li><NuxtLink class="link" to="/Categories">Kategorien</NuxtLink></li>
+          <li>
+            <NuxtLink class="link" to="/Categories">Kategorien</NuxtLink>
+          </li>
           <li><NuxtLink class="link" to="/Users">Users</NuxtLink></li>
           <li><NuxtLink class="link" to="/About">About</NuxtLink></li>
         </ul>
@@ -179,19 +181,24 @@ header {
     .dropdown-nav {
       display: flex;
       align-items: center;
-      // justify-content: space-evenly;
+      justify-content: center;
       row-gap: 1em;
       flex-direction: column;
       position: fixed;
-      width: 100%;
       max-width: 200px;
+      // width: 100%;
       height: 100%;
       background-color: #004a99;
       box-shadow: 0 0 10px #000;
       padding: 0;
 
+      // position: fixed; /* or absolute */
       top: 0;
       left: 0;
+      // transform: translate(-20%, 20%);
+
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
 
       li {
         margin-left: 0;
@@ -208,16 +215,16 @@ header {
 
     .mobile-nav-enter-active,
     .mobile-nav-leave-active {
-      transition: 1s ease all;
+      // transition: 1s ease all;
     }
 
     .mobile-nav-enter-from,
     .mobile-nav-leave-to {
-      transform: translateX(-200px);
+      // transform: translateX(-200px);
     }
 
     .mobile-nav-enter-to {
-      transform: translateX(0);
+      // transform: translateX(0);
     }
   }
   .wave {
