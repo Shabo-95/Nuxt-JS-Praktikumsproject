@@ -1,7 +1,7 @@
 <template>
   <div class="card-custom">
     <div class="image-container">
-      <ImageComponent :source="image" class="image" />
+      <ImageComponent :source="source" class="image" />
     </div>
     <div class="card-body-custom">
       <h4 class="card-title-custom">Lorem ipsum dolor sit amet consectetur.</h4>
@@ -17,8 +17,11 @@
 
 <script>
 export default {
-  data() {
-    return { image: require('@/assets/images/grid-images/placeholder.png') }
+  props: {
+    source: {
+      type: String,
+      required: true,
+    },
   },
 }
 </script>

@@ -1,16 +1,16 @@
 <template>
   <div class="grid-container">
     <div class="grid-item item-1">
-      <CardGrid />
+      <CardGrid :source="source" />
     </div>
     <div class="grid-item item-2">
-      <CardGrid />
+      <CardGrid :source="source" />
     </div>
     <div class="grid-item item-3">
-      <CardGrid />
+      <CardGrid :source="source" />
     </div>
     <div class="grid-item item-4">
-      <CardGrid />
+      <CardGrid :source="source" />
     </div>
   </div>
 </template>
@@ -21,6 +21,12 @@ import CardGrid from '~/components/CardGrid.vue'
 export default {
   components: {
     CardGrid,
+  },
+  props: {
+    source: {
+      type: String,
+      required: true,
+    },
   },
 }
 </script>

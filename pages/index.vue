@@ -9,7 +9,7 @@
     <!-- <ImagePlaceholder :source="image" /> -->
     <HeaderText :title="title" :body="body" />
     <Accordion :items="items" />
-    <GridContent />
+    <GridContent :source="source" />
     <PhotoGrid />
     <ImagePlaceholder v-bind="sources" />
   </div>
@@ -35,12 +35,14 @@ export default {
 
   data() {
     return {
+      image: require('@/assets/images/header-image/sale.jpeg'),
+      angebotTitle: 'Bis zu 50% Rabbat',
+      subTitle: 'Nur bis zum 31. März',
+      text: 'Lassen Sie sich von uns vor Ort begeistern und besuchen Sie uns in unserem Geschäft in der Flachstraße in dem Westcenter, Wir werden uns auf Sie freuen.',
+
       title: 'Lorem ipsum dolor sit amet consectetur.',
       body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque nobis totam eum aspernatur, magnam sunt dolorem harum unde facere enim nisi modi error ducimus deleniti dolorum perferendis cum quas! Ea quod distinctio modi neque incidunt laboriosam, similique perferendis voluptas error enim, vitae dolorem maxime aut dignissimos laborum quos architecto velit et nam esse officia voluptatibus. Hic consectetur ullam fuga! Rerum, totam! Cum, inventore quidem asperiores vel voluptate obcaecati ipsam consectetur, molestiae, debitis odit maiores ad! Ex culpa consequatur eum? Ducimus ratione beatae esse.',
-      sources: {
-        imageBig: 'https://via.placeholder.com/600',
-        imageSmall: 'https://via.placeholder.com/300',
-      },
+
       items: [
         {
           header: 'Lorem ipsum dolor sit amet consectetur.',
@@ -76,10 +78,13 @@ export default {
             'Quos tempore laboriosam omnis odit ea, molestias optio veniam.</p>',
         },
       ],
-      image: require('@/assets/images/header-image/sale.jpeg'),
-      angebotTitle: 'Bis zu 50% Rabbat',
-      subTitle: 'Nur bis zum 31. März',
-      text: 'Lassen Sie sich von uns vor Ort begeistern und besuchen Sie uns in unserem Geschäft in der Flachstraße in dem Westcenter, Wir werden uns auf Sie freuen.',
+
+      source: require('@/assets/images/grid-images/placeholder.png'),
+
+      sources: {
+        imageBig: 'https://via.placeholder.com/600',
+        imageSmall: 'https://via.placeholder.com/300',
+      },
     }
   },
 }
