@@ -1,8 +1,8 @@
 <template>
   <div class="customContainer">
     <div class="customContainer__content">
-      <h1 class="customContainer__h1" v-html="title"></h1>
-      <p v-html="body"></p>
+      <h1 class="customContainer__h1">{{ title }}</h1>
+      <p>{{ body }}</p>
     </div>
   </div>
 </template>
