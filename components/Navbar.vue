@@ -215,16 +215,11 @@ header {
 
     .mobile-nav-enter-active,
     .mobile-nav-leave-active {
-      // transition: 1s ease all;
+      transition: 1s ease all;
     }
-
-    .mobile-nav-enter-from,
+    .mobile-nav-enter,
     .mobile-nav-leave-to {
-      // transform: translateX(-200px);
-    }
-
-    .mobile-nav-enter-to {
-      // transform: translateX(0);
+      transform: translateX(-200px);
     }
   }
   .wave {
