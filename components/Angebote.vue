@@ -14,10 +14,11 @@
       <h5 class="text">
         {{ text }}
       </h5>
-
-      <button class="custom-button" @click="$nuxt.$emit('open-modal')">
-        Jetzt einkaufen
-      </button>
+      <NuxtLink class="link" to="/Products">
+        <button class="custom-button">
+          Jetzt einkaufen
+        </button>
+      </NuxtLink>
     </div>
   </div>
 </template>

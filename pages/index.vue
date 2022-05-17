@@ -79,7 +79,7 @@ export default {
       image: require('@/assets/images/header-image/sale.jpeg'),
       angebotTitle: 'Bis zu 50% Rabbat',
       subTitle: 'Nur bis zum 31. März',
-      text: 'Lassen Sie sich von uns vor Ort begeistern und besuchen Sie uns in unserem Geschäft in der Flachstraße in dem Westcenter, Wir werden uns auf Sie freuen.',
+      text: 'Lassen Sie sich von uns vor Ort begeistern und besuchen Sie uns in unserem Geschäft in der Flachstraße, Wir werden uns auf Sie freuen.',
     }
   },
 }
