@@ -15,9 +15,11 @@
         {{ text }}
       </h5>
       <NuxtLink class="link" to="/Products">
-        <button class="custom-button">
-          Jetzt einkaufen
-        </button>
+        <div class="button-div">
+          <button class="custom-button">
+            Jetzt einkaufen
+          </button>
+        </div>
       </NuxtLink>
     </div>
   </div>
@@ -150,6 +152,35 @@ export default {
 @media (max-width: 576px) {
   .custom-container {
     max-width: 80%;
+  }
+  .custom-image {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .title {
+    padding: 1rem;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .sub-title {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .text {
+    padding: 1rem;
+    font-size: 20px;
+  }
+  .angebote {
+    padding: 0;
+  }
+  .button-div { 
+      padding: 1rem;
   }
 }
 </style>

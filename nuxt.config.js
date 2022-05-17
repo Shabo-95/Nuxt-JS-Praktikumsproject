@@ -31,12 +31,18 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/style-resources', '@nuxtjs/fontawesome'],
+  buildModules: ['@nuxtjs/style-resources', '@nuxtjs/fontawesome', '@nuxtjs/google-fonts'],
 
   fontawesome: {
     icons: {
       solid: true,
       brands: true,
+    },
+  },
+  
+  googleFonts: {
+    families: {
+      Roboto: [400],
     },
   },
 

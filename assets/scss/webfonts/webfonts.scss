@@ -2,4 +2,8 @@
 //   font-family: "Festive-Regular";
 //   src: url($font_path + "Festive-Regular.ttf") format("ttf");
 // }
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+/* I Commented the next line because this will not work with the generated static content, 
+   in nuxt there is another soloution that we add it directly to the nuxt config file */
+// @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
