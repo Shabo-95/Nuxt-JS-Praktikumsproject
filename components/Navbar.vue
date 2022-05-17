@@ -22,8 +22,9 @@
       <ul v-show="!mobile" class="navigation">
         <li><NuxtLink class="link" to="/Products">Produkte</NuxtLink></li>
         <li><NuxtLink class="link" to="/Categories">Kategorien</NuxtLink></li>
-        <li><NuxtLink class="link" to="/Users">Users</NuxtLink></li>
-        <li><NuxtLink class="link" to="/About">About</NuxtLink></li>
+        <li><NuxtLink class="link" to="/Users">Angebote</NuxtLink></li>
+        <li><NuxtLink class="link" to="/Categories">Neuigkeiten</NuxtLink></li>
+        <li><NuxtLink class="link" to="/About">Kontakt</NuxtLink></li>
       </ul>
       <div class="icon">
         <font-awesome-icon
@@ -51,8 +52,9 @@
           <li>
             <NuxtLink class="link" to="/Categories">Kategorien</NuxtLink>
           </li>
-          <li><NuxtLink class="link" to="/Users">Users</NuxtLink></li>
-          <li><NuxtLink class="link" to="/About">About</NuxtLink></li>
+        <li><NuxtLink class="link" to="/Users">Angebote</NuxtLink></li>
+        <li><NuxtLink class="link" to="/Categories">Neuigkeiten</NuxtLink></li>
+        <li><NuxtLink class="link" to="/About">Kontakt</NuxtLink></li>
         </ul>
       </transition>
     </nav>

@@ -62,22 +62,29 @@ export default {
   margin-right: auto;
   background-color: #fffbc8;
   box-shadow: 0 0 10px #f0ad4e;
+
+  font-family: $acc-font;
 }
 .custom-image {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 3rem;
+  width: 100%;
+  height: auto;
+  img {
+    border-radius: 50px;
+  }
 }
 
 .title {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .sub-title {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .text {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .angebote {
   padding: 1rem;
@@ -89,6 +96,9 @@ export default {
   border-radius: 50px;
   padding: 1rem;
   width: 100%;
+  font-family: $acc-font;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .custom-button:hover {
@@ -138,7 +148,7 @@ export default {
 
 @media (max-width: 576px) {
   .custom-container {
-    max-width: 540px;
+    max-width: 80%;
   }
 }
 </style>
