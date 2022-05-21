@@ -11,10 +11,7 @@
         <h4 class="card-title-custom">{{ title }}</h4>
       </div>
       <div class="card-footer-custom">
-        <p class="card-text-custom">Preis: {{ price }}$</p>
-        <button class="custom-button" @click="$nuxt.$emit('open-modal')">
-          Warenkorb legen
-        </button>
+        <p class="card-text-custom">Preis: {{ price }}€</p>
       </div>
     </div>
   </NuxtLink>
@@ -36,7 +33,7 @@ export default {
       required: true,
     },
     price: {
-      type: Number,
+      type: String,
       required: true,
     },
   },
@@ -83,6 +80,7 @@ export default {
 
 .grid-image {
   padding: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .card-body-custom {
@@ -92,14 +90,19 @@ export default {
 }
 
 .card-title-custom {
-  font-size: 24px;
+  font-family: $acc-font;
+  font-size: 18px;
+  //font-weight: bold;
   color: black;
-  padding-bottom: 0.5rem;
 }
 
 .card-text-custom {
+  font-family: $acc-font;
   font-size: 16px;
+  font-weight: bold;
   color: black;
+  margin: 0;
+  padding: 5px;
 }
 
 .card-footer-custom {

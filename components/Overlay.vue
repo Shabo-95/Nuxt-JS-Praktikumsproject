@@ -10,22 +10,10 @@
       </div>
       <div class="custom-modal__content">
         <h6>Produkt ist im Warenkorb!</h6>
-        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
-        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
-        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
-        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
-        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
-        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
-        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
-        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
-        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
-        <p>Ihre Produkt ist erfolgreich in Ihrem Warenkorb gelandet.</p>
-        <button class="btn btn-primary">zur Kasse gehen</button>
+        <p>Wollen Sie zur Kasse gehen?</p>
+        <button class="btn btn-primary">zur Kasse</button>
       </div>
     </div>
-    <!-- <div class="close">
-      <img class="close-img" :src="require('~/assets/close-icon.png')" alt="" />
-    </div> -->
   </div>
 </template>
 
