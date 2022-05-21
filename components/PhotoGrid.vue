@@ -8,7 +8,7 @@
     </div>
     <div class="card card-wide">
       <img
-        src="https://source.unsplash.com/FT1ePvQ1HlE/640x800"
+        src="https://source.unsplash.com/GLjekdIJftQ/640x800"
         alt="image2"
       />
     </div>
@@ -26,7 +26,7 @@
     </div>
     <div class="card card-wide">
       <img
-        src="https://source.unsplash.com/5mYVM_fDv/640x800"
+        src="https://source.unsplash.com/KryYySNT_Xw/640x800"
         alt="image2"
       />
     </div>
@@ -44,11 +44,17 @@
     </div>
     <div class="card card-tall card-wide">
       <img
-        src="https://source.unsplash.com/82auqXjSxZI/640x800"
+        src="https://source.unsplash.com/T6PK5AaZ9ww/640x800"
         alt="image2"
       />
     </div>
     <div class="card card-tall">
+      <img
+        src="https://source.unsplash.com/jcdgiudOZmY/640x800"
+        alt="image2"
+      />
+    </div>
+    <div class="card">
       <img
         src="https://source.unsplash.com/Xo5CULzxaYE/640x800"
         alt="image2"
@@ -56,13 +62,7 @@
     </div>
     <div class="card">
       <img
-        src="https://source.unsplash.com/T6PK5AaZ9ww/640x800"
-        alt="image2"
-      />
-    </div>
-    <div class="card">
-      <img
-        src="https://source.unsplash.com/jKt5LwMYlxw/640x800"
+        src="https://source.unsplash.com/CjvoH6iPhRE/640x800"
         alt="image2"
       />
     </div>
