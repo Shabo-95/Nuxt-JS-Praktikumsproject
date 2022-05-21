@@ -38,16 +38,15 @@ export default {
   font-size: 16px;
 }
 
+.card-custom:hover {
+  box-shadow: 0 0 20px rgba(100,100,100,.7);
+  cursor: pointer;
+}
+
 ::v-deep {
   .image {
     padding: 0;
-    // object-fit: cover;
-    // width: 100%;
   }
 }
-// img {
-//   padding: 0;
-//   // object-fit: cover;
-//   // width: 100%;
-// }
+
 </style>
