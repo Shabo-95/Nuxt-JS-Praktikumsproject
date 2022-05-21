@@ -56,13 +56,14 @@ export default {
 
 .card-image {
   padding: 2rem;
+  margin: 0;
 }
 
 .card-text-custom {
   font-weight: bold;
   text-transform: uppercase;
   color: #000;
-  padding-bottom: 0.5rem;
+  margin: 0;
 }
 .card-footer-custom {
   width: 100%;
