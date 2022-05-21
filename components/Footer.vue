@@ -11,8 +11,14 @@
         <li>
           <NuxtLink class="nav-link" to="/Categories">Kategorien</NuxtLink>
         </li>
+                <li>
+          <NuxtLink class="nav-link" to="/Products">Angebote</NuxtLink>
+        </li>
+                <li>
+          <NuxtLink class="nav-link" to="/Products">Neuigkeiten</NuxtLink>
+        </li>
         <li>
-          <NuxtLink class="nav-link" to="/About">About</NuxtLink>
+          <NuxtLink class="nav-link" to="/About">Kontakt</NuxtLink>
         </li>
       </ul>
       <ul class="custom-flex-row">

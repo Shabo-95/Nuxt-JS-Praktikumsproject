@@ -38,6 +38,9 @@ export default {
 }
 </script>
 <style lang="scss">
+body {
+   font-family: $acc-font, sans-serif;
+}
 .layout {
   // position: relative;
   display: flex;
